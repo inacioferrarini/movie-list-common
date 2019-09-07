@@ -12,6 +12,6 @@ public protocol Module: AnyObject {
     var coordinator: Coordinator { get }
     
     /// Initial `UIViewController` for the module
-    var rootViewController: UIViewController { get }
+//    var rootViewController: UIViewController { get }
     
 }
