@@ -10,6 +10,7 @@
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD3265E2323D8D9006E7DBC /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3265D2323D8D9006E7DBC /* CommonTests.swift */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBD3266E2323DF37006E7DBC /* TesteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3266D2323DF37006E7DBC /* TesteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BBD326582323D8D9006E7DBC /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD3265D2323D8D9006E7DBC /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		BBD3265F2323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD3266D2323DF37006E7DBC /* TesteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
+				BBD3266D2323DF37006E7DBC /* TesteView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				TargetAttributes = {
 					BBD3264E2323D8D9006E7DBC = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					BBD326572323D8D9006E7DBC = {
 						CreatedOnToolsVersion = 10.3;
@@ -215,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD3266E2323DF37006E7DBC /* TesteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +367,7 @@
 		BBD326642323D8DA006E7DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -379,6 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inacio.concrete.Common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,6 +394,7 @@
 		BBD326652323D8DA006E7DBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -412,6 +420,7 @@
 		BBD326672323D8DA006E7DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;
 				INFOPLIST_FILE = CommonTests/Info.plist;
@@ -430,6 +439,7 @@
 		BBD326682323D8DA006E7DBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;
 				INFOPLIST_FILE = CommonTests/Info.plist;
