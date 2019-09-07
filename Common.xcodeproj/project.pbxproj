@@ -14,6 +14,9 @@
 		BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619198232406BA007E4C48 /* Instantiable.swift */; };
 		BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619199232406BA007E4C48 /* Storyboarded.swift */; };
 		BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */; };
+		BB61920123243AFC007E4C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* Assets.xcassets */; };
+		BB61920323243B01007E4C48 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920223243B01007E4C48 /* Assets.swift */; };
+		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD3265E2323D8D9006E7DBC /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3265D2323D8D9006E7DBC /* CommonTests.swift */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +40,9 @@
 		BB619198232406BA007E4C48 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
 		BB619199232406BA007E4C48 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCodedViewController.swift; sourceTree = "<group>"; };
+		BB61920023243AFC007E4C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB61920223243B01007E4C48 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		BB61920623244503007E4C48 /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
 		BBD3264F2323D8D9006E7DBC /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD326522323D8D9006E7DBC /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		BBD326532323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +98,31 @@
 			path = Initialization;
 			sourceTree = "<group>";
 		};
+		BB6191FF23243AE3007E4C48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB61920023243AFC007E4C48 /* Assets.xcassets */,
+				BB61920223243B01007E4C48 /* Assets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB619204232444E7007E4C48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB619205232444EF007E4C48 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB619205232444EF007E4C48 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB61920623244503007E4C48 /* UIColor+Util.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		BBD326452323D8D9006E7DBC = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +144,8 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BB619204232444E7007E4C48 /* Extensions */,
+				BB6191FF23243AE3007E4C48 /* Resources */,
 				BB619191232406BA007E4C48 /* Coordinators */,
 				BB619195232406BA007E4C48 /* Initialization */,
 				BB619193232406BA007E4C48 /* Module */,
@@ -224,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB61920123243AFC007E4C48 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */,
+				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
+				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
 				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
 				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
