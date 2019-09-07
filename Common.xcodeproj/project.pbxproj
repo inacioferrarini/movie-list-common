@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
+		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
+		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
+		BB61919E232406BA007E4C48 /* XibedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619197232406BA007E4C48 /* XibedView.swift */; };
+		BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619198232406BA007E4C48 /* Instantiable.swift */; };
+		BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619199232406BA007E4C48 /* Storyboarded.swift */; };
+		BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */; };
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD3265E2323D8D9006E7DBC /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3265D2323D8D9006E7DBC /* CommonTests.swift */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBD3266E2323DF37006E7DBC /* TesteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3266D2323DF37006E7DBC /* TesteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
+		BB619197232406BA007E4C48 /* XibedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedView.swift; sourceTree = "<group>"; };
+		BB619198232406BA007E4C48 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
+		BB619199232406BA007E4C48 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCodedViewController.swift; sourceTree = "<group>"; };
 		BBD3264F2323D8D9006E7DBC /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD326522323D8D9006E7DBC /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		BBD326532323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD326582323D8D9006E7DBC /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD3265D2323D8D9006E7DBC /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		BBD3265F2323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBD3266D2323DF37006E7DBC /* TesteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB619191232406BA007E4C48 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BB619192232406BA007E4C48 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BB619193232406BA007E4C48 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BB619194232406BA007E4C48 /* Module.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BB619195232406BA007E4C48 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				BB619196232406BA007E4C48 /* XibedViewController.swift */,
+				BB619197232406BA007E4C48 /* XibedView.swift */,
+				BB619198232406BA007E4C48 /* Instantiable.swift */,
+				BB619199232406BA007E4C48 /* Storyboarded.swift */,
+				BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */,
+			);
+			path = Initialization;
+			sourceTree = "<group>";
+		};
 		BBD326452323D8D9006E7DBC = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +113,11 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BB619191232406BA007E4C48 /* Coordinators */,
+				BB619195232406BA007E4C48 /* Initialization */,
+				BB619193232406BA007E4C48 /* Module */,
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
-				BBD3266D2323DF37006E7DBC /* TesteView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -219,7 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD3266E2323DF37006E7DBC /* TesteView.swift in Sources */,
+				BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */,
+				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
+				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
+				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
+				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
+				BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */,
+				BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
