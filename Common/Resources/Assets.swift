@@ -37,6 +37,21 @@ public struct Assets {
                                                             compatibleWith: nil)
         }
         
+        public struct NavigationBar {
+            
+            public static let backgroundColor = UIColor(named: "NavigationBarBackgroundColor",
+                                                        in: Bundle(for: PrivateAssets.self),
+                                                        compatibleWith: nil)
+
+            public static let titleColor = UIColor(named: "NavigationBarTitleTextColor",
+                                                   in: Bundle(for: PrivateAssets.self),
+                                                   compatibleWith: nil)
+
+            public static let iconColor = UIColor(named: "NavigationBarIconColor",
+                                                  in: Bundle(for: PrivateAssets.self),
+                                                  compatibleWith: nil)
+        }
+
     }
     
     public struct Icons {
