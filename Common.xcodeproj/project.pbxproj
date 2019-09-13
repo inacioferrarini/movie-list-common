@@ -20,6 +20,7 @@
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD3265E2323D8D9006E7DBC /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3265D2323D8D9006E7DBC /* CommonTests.swift */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE2E32D232B1DCA008D811D /* UIColor+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIColor+Tint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BBD326582323D8D9006E7DBC /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD3265D2323D8D9006E7DBC /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		BBD3265F2323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE2E32C232B1DCA008D811D /* UIColor+Tint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				BB61920623244503007E4C48 /* UIColor+Util.swift */,
+				BBE2E32C232B1DCA008D811D /* UIColor+Tint.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
+				BBE2E32D232B1DCA008D811D /* UIColor+Tint.swift in Sources */,
 				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
 				BB61919C232406BA007E4C48 /* Module.swift in Sources */,

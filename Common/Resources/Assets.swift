@@ -16,10 +16,25 @@ public struct Assets {
         
         public struct TabBar {
             
-            public static let background = UIColor(hex: "#F7CE5B")
-            public static let icon = UIColor(hex: "#110F0A")
-            public static let selectedIcon = UIColor(hex: "#110F0A")
+            public static let backgroundColor = UIColor(named: "TabBarBackgroundColor",
+                                                        in: Bundle(for: PrivateAssets.self),
+                                                        compatibleWith: nil)
             
+            public static let selectedTextColor = UIColor(named: "TabBarSelectedTextColor",
+                                                          in: Bundle(for: PrivateAssets.self),
+                                                          compatibleWith: nil)
+            
+            public static let unselectedTextColor = UIColor(named: "TabBarUnselectedTextColor",
+                                                            in: Bundle(for: PrivateAssets.self),
+                                                            compatibleWith: nil)
+            
+            public static let selectedIconColor = UIColor(named: "TabBarSelectedIconColor",
+                                                          in: Bundle(for: PrivateAssets.self),
+                                                          compatibleWith: nil)
+            
+            public static let unselectedIconColor = UIColor(named: "TabBarUnselectedIconColor",
+                                                            in: Bundle(for: PrivateAssets.self),
+                                                            compatibleWith: nil)
         }
         
     }
@@ -28,13 +43,15 @@ public struct Assets {
         
         public struct Modules {
 
-            public static let Favorite = UIImage(named: "favorite_empty_icon",
+            public static let Favorite = UIImage(named: "FavoriteMoviesIcon",
                                                  in: Bundle(for: PrivateAssets.self),
-                                                 compatibleWith: nil)
-            public static let Catalog = UIImage(named: "list_icon",
+                                                 compatibleWith: nil)?
+                .tint(with: Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue)
+            
+            public static let Catalog = UIImage(named: "MoviesCatalogIcon",
                                                 in: Bundle(for: PrivateAssets.self),
-                                                compatibleWith: nil)
-
+                                                compatibleWith: nil)?
+                .tint(with: Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue)
         }
 
         public static let check = UIImage(named: "check_icon")
