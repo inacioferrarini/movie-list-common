@@ -14,7 +14,7 @@
 		BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619198232406BA007E4C48 /* Instantiable.swift */; };
 		BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619199232406BA007E4C48 /* Storyboarded.swift */; };
 		BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */; };
-		BB61920123243AFC007E4C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* Assets.xcassets */; };
+		BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* CommonAssets.xcassets */; };
 		BB61920323243B01007E4C48 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920223243B01007E4C48 /* Assets.swift */; };
 		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
@@ -41,7 +41,7 @@
 		BB619198232406BA007E4C48 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
 		BB619199232406BA007E4C48 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCodedViewController.swift; sourceTree = "<group>"; };
-		BB61920023243AFC007E4C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB61920023243AFC007E4C48 /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
 		BB61920223243B01007E4C48 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		BB61920623244503007E4C48 /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
 		BBD3264F2323D8D9006E7DBC /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,7 @@
 		BB6191FF23243AE3007E4C48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB61920023243AFC007E4C48 /* Assets.xcassets */,
+				BB61920023243AFC007E4C48 /* CommonAssets.xcassets */,
 				BB61920223243B01007E4C48 /* Assets.swift */,
 			);
 			path = Resources;
@@ -260,7 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB61920123243AFC007E4C48 /* Assets.xcassets in Resources */,
+				BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
