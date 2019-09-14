@@ -15,65 +15,52 @@ public struct Assets {
     public struct Colors {
         
         public struct TabBar {
-            
-            public static let backgroundColor = UIColor(named: "TabBarBackgroundColor",
-                                                        in: Bundle(for: PrivateAssets.self),
-                                                        compatibleWith: nil)
-            
-            public static let selectedTextColor = UIColor(named: "TabBarSelectedTextColor",
-                                                          in: Bundle(for: PrivateAssets.self),
-                                                          compatibleWith: nil)
-            
-            public static let unselectedTextColor = UIColor(named: "TabBarUnselectedTextColor",
-                                                            in: Bundle(for: PrivateAssets.self),
-                                                            compatibleWith: nil)
-            
-            public static let selectedIconColor = UIColor(named: "TabBarSelectedIconColor",
-                                                          in: Bundle(for: PrivateAssets.self),
-                                                          compatibleWith: nil)
-            
-            public static let unselectedIconColor = UIColor(named: "TabBarUnselectedIconColor",
-                                                            in: Bundle(for: PrivateAssets.self),
-                                                            compatibleWith: nil)
+            public static let backgroundColor = color("TabBarBackgroundColor")
+            public static let selectedTextColor = color("TabBarSelectedTextColor")
+            public static let unselectedTextColor = color("TabBarUnselectedTextColor")
+            public static let selectedIconColor = color("TabBarSelectedIconColor")
+            public static let unselectedIconColor = color("TabBarUnselectedIconColor")
         }
         
         public struct NavigationBar {
-            
-            public static let backgroundColor = UIColor(named: "NavigationBarBackgroundColor",
-                                                        in: Bundle(for: PrivateAssets.self),
-                                                        compatibleWith: nil)
-
-            public static let titleColor = UIColor(named: "NavigationBarTitleTextColor",
-                                                   in: Bundle(for: PrivateAssets.self),
-                                                   compatibleWith: nil)
-
-            public static let iconColor = UIColor(named: "NavigationBarIconColor",
-                                                  in: Bundle(for: PrivateAssets.self),
-                                                  compatibleWith: nil)
+            public static let backgroundColor = color("NavigationBarBackgroundColor")
+            public static let titleColor = color("NavigationBarTitleTextColor")
+            public static let iconColor = color("NavigationBarIconColor")
         }
 
     }
     
     public struct Icons {
         
+        private static let selectedIconTintColor = Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue
+        
         public struct Modules {
-
-            public static let Favorite = UIImage(named: "FavoriteMoviesIcon",
-                                                 in: Bundle(for: PrivateAssets.self),
-                                                 compatibleWith: nil)?
-                .tint(with: Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue)
-            
-            public static let Catalog = UIImage(named: "MoviesCatalogIcon",
-                                                in: Bundle(for: PrivateAssets.self),
-                                                compatibleWith: nil)?
-                .tint(with: Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue)
+            public static let favorite = image("FavoriteMoviesIcon", tint: selectedIconTintColor)
+            public static let catalog = image("MoviesCatalogIcon", tint: selectedIconTintColor)
         }
 
-        public static let check = UIImage(named: "check_icon")
-        public static let favoriteFull = UIImage(named: "favorite_full_icon")
-        public static let favoriteGray = UIImage(named: "favorite_gray_icon")
-        public static let filter = UIImage(named: "FilterIcon")
-        public static let search = UIImage(named: "search_icon")
+        public static let check = image("check_icon")
+        public static let favoriteFull = image("favorite_full_icon")
+        public static let favoriteGray = image("favorite_gray_icon")
+        public static let filter = image("FilterIcon")
+        public static let search = image("search_icon")
     }
     
+    private static func color(_ colorName: String) -> UIColor? {
+        return UIColor(named: colorName, in: Bundle(for: PrivateAssets.self), compatibleWith: nil)
+    }
+    
+    private static func color(_ colorName: String, `default`: UIColor) -> UIColor {
+        guard let assetColor = color(colorName) else { return `default` }
+        return assetColor
+    }
+    
+    private static func image(_ imageName: String) -> UIImage? {
+        return UIImage(named: imageName, in: Bundle(for: PrivateAssets.self), compatibleWith: nil)
+    }
+    
+    private static func image(_ imageName: String, tint: UIColor) -> UIImage? {
+        return image(imageName)?.tint(with: tint)
+    }
+
 }
