@@ -27,6 +27,8 @@
 		BB58BF81232E842500A13142 /* TestStoryboarded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF80232E842500A13142 /* TestStoryboarded.storyboard */; };
 		BB58BF83232E843900A13142 /* TestStoryboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF82232E843900A13142 /* TestStoryboarded.swift */; };
 		BB58BF85232E849400A13142 /* StoryboardedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF84232E849400A13142 /* StoryboardedSpec.swift */; };
+		BB58BF87232E858B00A13142 /* TestViewCodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */; };
+		BB58BF89232E85DB00A13142 /* ViewCodedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */; };
 		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
 		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
 		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
@@ -86,6 +88,8 @@
 		BB58BF80232E842500A13142 /* TestStoryboarded.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboarded.storyboard; sourceTree = "<group>"; };
 		BB58BF82232E843900A13142 /* TestStoryboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStoryboarded.swift; sourceTree = "<group>"; };
 		BB58BF84232E849400A13142 /* StoryboardedSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardedSpec.swift; sourceTree = "<group>"; };
+		BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewCodedViewController.swift; sourceTree = "<group>"; };
+		BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodedViewControllerSpec.swift; sourceTree = "<group>"; };
 		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				BB58BF7C232E826D00A13142 /* TestXibedView.xib */,
 				BB58BF82232E843900A13142 /* TestStoryboarded.swift */,
 				BB58BF80232E842500A13142 /* TestStoryboarded.storyboard */,
+				BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */,
 			);
 			path = Initialization;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				BB58BF78232E80A400A13142 /* XibedViewControllerSpec.swift */,
 				BB58BF7E232E835F00A13142 /* XibedViewSpec.swift */,
 				BB58BF84232E849400A13142 /* StoryboardedSpec.swift */,
+				BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */,
 			);
 			path = Initialization;
 			sourceTree = "<group>";
@@ -458,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB58BF89232E85DB00A13142 /* ViewCodedViewControllerSpec.swift in Sources */,
 				BB58BF7F232E835F00A13142 /* XibedViewSpec.swift in Sources */,
 				BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */,
 				BB58BF67232E793B00A13142 /* TestClass.swift in Sources */,
@@ -467,6 +474,7 @@
 				BB58BF75232E7FDA00A13142 /* TestXibedViewController.swift in Sources */,
 				BB58BF85232E849400A13142 /* StoryboardedSpec.swift in Sources */,
 				BB58BF7B232E824000A13142 /* TestXibedView.swift in Sources */,
+				BB58BF87232E858B00A13142 /* TestViewCodedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
