@@ -49,18 +49,18 @@ public struct Assets {
         }
 
         /// Icon to be used for checked status
-        public static let check = image("check_icon")
+        public static let check = image("CheckmarkIcon")
         /// Icon to be used for favorite movies
-        public static let favoriteFull = image("favorite_full_icon")
+        public static let favoriteFull = image("FavoriteFullIcon")
         /// Icon to be used for non-favorite movies
-        public static let favoriteGray = image("favorite_gray_icon")
+        public static let favoriteGray = image("FavoriteGrayIcon")
         
         /// Icons for each App action
         public struct Actions {
             /// Icon for filter action
             public static let filter = image("FilterIcon")
             /// Icon for search action
-            public static let search = image("search_icon")
+            public static let search = image("SearchIcon")
         }
 
     }
