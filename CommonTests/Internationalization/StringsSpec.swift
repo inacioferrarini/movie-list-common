@@ -10,34 +10,49 @@ class StringsSpec: QuickSpec {
 
             let testBundle = Bundle(for: StringsSpec.self)
             let table = "StringsSpec"
-
-            context("Loading strings from a localized file") {
-
-                let languageCode = "en-US"
-                
-                it("must load string from en-US localized string file") {
-                    let loadedString = Strings.string("TestString1", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
-                    expect(loadedString).to(equal("TestString1 en-US"))
-                }
-
-                it("must return default string from en-US localized string file") {
-                    let loadedString = Strings.string("Sbrubles", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
-                    expect(loadedString).to(equal("String not found"))
-                }
-
-            }
             
-            context("Loading strings from a localized file") {
+            context("When languageCode is valid") {
 
-                let languageCode = "pt-BR"
+                context("Loading strings from a localized file, in en-US") {
 
-                it("must load string from pt-BR localized string file") {
-                    let loadedString = Strings.string("TestString1", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
-                    expect(loadedString).to(equal("TestString1 pt-BR"))
+                    let languageCode = "en-US"
+                    
+                    it("must load string from en-US localized string file") {
+                        let loadedString = Strings.string("TestString1", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
+                        expect(loadedString).to(equal("TestString1 en-US"))
+                    }
+
+                    it("must return default string from en-US localized string file") {
+                        let loadedString = Strings.string("Sbrubles", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
+                        expect(loadedString).to(equal("String not found"))
+                    }
+
                 }
+                
+                context("Loading strings from a localized file, in pt-BR") {
 
-                it("must return default string from pt-BR localized string file") {
-                    let loadedString = Strings.string("Sbrubles", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
+                    let languageCode = "pt-BR"
+
+                    it("must load string from pt-BR localized string file") {
+                        let loadedString = Strings.string("TestString1", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
+                        expect(loadedString).to(equal("TestString1 pt-BR"))
+                    }
+
+                    it("must return default string from pt-BR localized string file") {
+                        let loadedString = Strings.string("Sbrubles", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
+                        expect(loadedString).to(equal("String not found"))
+                    }
+
+                }
+                
+            }
+
+            context("When languageCode is not valid") {
+
+                let languageCode = "ja"
+
+                it("must load string from ja localized string file") {
+                    let loadedString = Strings.string("TestString1", languageCode: languageCode, bundle: testBundle, table: table, default: "String not found")
                     expect(loadedString).to(equal("String not found"))
                 }
 

@@ -13,7 +13,7 @@ public struct Strings {
     ///   - table: The string file where the `stringName` is located.
     ///   - `default`: A string to be returned if a matching string cannot be found.
     /// - Returns: The required string or `default`.
-    public static func string(_ stringName: String, languageCode: String, bundle: Bundle, table: String, `default`: String = "Not Found") -> String {
+    public static func string(_ stringName: String, languageCode: String, bundle: Bundle, table: String? = nil, `default`: String = "Not Found") -> String {
         if let path = bundle.path(forResource: languageCode, ofType: "lproj"),
             let languageBundle = Bundle(path: path) {
             return languageBundle.localizedString(forKey: stringName, value: `default`, table: table)

@@ -16,6 +16,8 @@
 		BB58BF56232E6D0300A13142 /* StringsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF55232E6D0300A13142 /* StringsSpec.swift */; };
 		BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF57232E6D1400A13142 /* InternationalizableSpec.swift */; };
 		BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF63232E6E9500A13142 /* StringsSpec.strings */; };
+		BB58BF67232E793B00A13142 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF66232E793B00A13142 /* TestClass.swift */; };
+		BB58BF6A232E796600A13142 /* TestClass.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF6C232E796600A13142 /* TestClass.strings */; };
 		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
 		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
 		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
@@ -64,6 +66,8 @@
 		BB58BF57232E6D1400A13142 /* InternationalizableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalizableSpec.swift; sourceTree = "<group>"; };
 		BB58BF62232E6E9500A13142 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
 		BB58BF64232E6E9600A13142 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
+		BB58BF66232E793B00A13142 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		BB58BF6B232E796600A13142 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/TestClass.strings"; sourceTree = "<group>"; };
 		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 				BB58BF63232E6E9500A13142 /* StringsSpec.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB58BF65232E792200A13142 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BF66232E793B00A13142 /* TestClass.swift */,
+				BB58BF6C232E796600A13142 /* TestClass.strings */,
+			);
+			path = HelperClasses;
 			sourceTree = "<group>";
 		};
 		BB619191232406BA007E4C48 /* Coordinators */ = {
@@ -229,6 +242,7 @@
 		BBD3265C2323D8D9006E7DBC /* CommonTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB58BF65232E792200A13142 /* HelperClasses */,
 				BB58BF59232E6D5500A13142 /* Resources */,
 				BB58BF54232E6CE700A13142 /* Internationalization */,
 				BBD3265F2323D8D9006E7DBC /* Info.plist */,
@@ -340,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */,
+				BB58BF6A232E796600A13142 /* TestClass.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */,
+				BB58BF67232E793B00A13142 /* TestClass.swift in Sources */,
 				BB58BF56232E6D0300A13142 /* StringsSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +428,14 @@
 				BB58BF64232E6E9600A13142 /* pt-BR */,
 			);
 			name = StringsSpec.strings;
+			sourceTree = "<group>";
+		};
+		BB58BF6C232E796600A13142 /* TestClass.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB58BF6B232E796600A13142 /* en-US */,
+			);
+			name = TestClass.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
