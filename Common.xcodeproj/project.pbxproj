@@ -18,6 +18,9 @@
 		BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF63232E6E9500A13142 /* StringsSpec.strings */; };
 		BB58BF67232E793B00A13142 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF66232E793B00A13142 /* TestClass.swift */; };
 		BB58BF6A232E796600A13142 /* TestClass.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF6C232E796600A13142 /* TestClass.strings */; };
+		BB58BF75232E7FDA00A13142 /* TestXibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF73232E7FDA00A13142 /* TestXibedViewController.swift */; };
+		BB58BF76232E7FDA00A13142 /* TestXibedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF74232E7FDA00A13142 /* TestXibedViewController.xib */; };
+		BB58BF79232E80A400A13142 /* XibedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF78232E80A400A13142 /* XibedViewControllerSpec.swift */; };
 		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
 		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
 		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
@@ -68,6 +71,9 @@
 		BB58BF64232E6E9600A13142 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
 		BB58BF66232E793B00A13142 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
 		BB58BF6B232E796600A13142 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/TestClass.strings"; sourceTree = "<group>"; };
+		BB58BF73232E7FDA00A13142 /* TestXibedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibedViewController.swift; sourceTree = "<group>"; };
+		BB58BF74232E7FDA00A13142 /* TestXibedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibedViewController.xib; sourceTree = "<group>"; };
+		BB58BF78232E80A400A13142 /* XibedViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibedViewControllerSpec.swift; sourceTree = "<group>"; };
 		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
@@ -145,10 +151,36 @@
 		BB58BF65232E792200A13142 /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
+				BB58BF6E232E7ECE00A13142 /* Initialization */,
+				BB58BF6D232E7EB000A13142 /* Internationalization */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		BB58BF6D232E7EB000A13142 /* Internationalization */ = {
+			isa = PBXGroup;
+			children = (
 				BB58BF66232E793B00A13142 /* TestClass.swift */,
 				BB58BF6C232E796600A13142 /* TestClass.strings */,
 			);
-			path = HelperClasses;
+			path = Internationalization;
+			sourceTree = "<group>";
+		};
+		BB58BF6E232E7ECE00A13142 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BF73232E7FDA00A13142 /* TestXibedViewController.swift */,
+				BB58BF74232E7FDA00A13142 /* TestXibedViewController.xib */,
+			);
+			path = Initialization;
+			sourceTree = "<group>";
+		};
+		BB58BF77232E804000A13142 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BF78232E80A400A13142 /* XibedViewControllerSpec.swift */,
+			);
+			path = Initialization;
 			sourceTree = "<group>";
 		};
 		BB619191232406BA007E4C48 /* Coordinators */ = {
@@ -227,11 +259,11 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BB619191232406BA007E4C48 /* Coordinators */,
+				BB619195232406BA007E4C48 /* Initialization */,
 				BB58BF38232DDF4900A13142 /* Internationalization */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB6191FF23243AE3007E4C48 /* Resources */,
-				BB619191232406BA007E4C48 /* Coordinators */,
-				BB619195232406BA007E4C48 /* Initialization */,
 				BB619193232406BA007E4C48 /* Module */,
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
@@ -244,6 +276,7 @@
 			children = (
 				BB58BF65232E792200A13142 /* HelperClasses */,
 				BB58BF59232E6D5500A13142 /* Resources */,
+				BB58BF77232E804000A13142 /* Initialization */,
 				BB58BF54232E6CE700A13142 /* Internationalization */,
 				BBD3265F2323D8D9006E7DBC /* Info.plist */,
 			);
@@ -355,6 +388,7 @@
 			files = (
 				BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */,
 				BB58BF6A232E796600A13142 /* TestClass.strings in Resources */,
+				BB58BF76232E7FDA00A13142 /* TestXibedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +441,8 @@
 				BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */,
 				BB58BF67232E793B00A13142 /* TestClass.swift in Sources */,
 				BB58BF56232E6D0300A13142 /* StringsSpec.swift in Sources */,
+				BB58BF79232E80A400A13142 /* XibedViewControllerSpec.swift in Sources */,
+				BB58BF75232E7FDA00A13142 /* TestXibedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
