@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF3B232DE21300A13142 /* Internationalizable.swift */; };
 		BB58BF48232DEE2700A13142 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF47232DEE2700A13142 /* Strings.swift */; };
+		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
+		BB58BF4E232E6AD000A13142 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; };
+		BB58BF52232E6BBC00A13142 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB58BF53232E6BBC00A13142 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
 		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
 		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
@@ -35,9 +39,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BB58BF51232E6BAE00A13142 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB58BF52232E6BBC00A13142 /* Nimble.framework in CopyFiles */,
+				BB58BF53232E6BBC00A13142 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BB58BF3B232DE21300A13142 /* Internationalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internationalizable.swift; sourceTree = "<group>"; };
 		BB58BF47232DEE2700A13142 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		BB58BF4C232E6AD000A13142 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +90,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */,
+				BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */,
+				BB58BF4E232E6AD000A13142 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +105,15 @@
 				BB58BF47232DEE2700A13142 /* Strings.swift */,
 			);
 			path = Internationalization;
+			sourceTree = "<group>";
+		};
+		BB58BF4A232E6AD000A13142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BF4C232E6AD000A13142 /* Nimble.framework */,
+				BB58BF4B232E6AD000A13142 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BB619191232406BA007E4C48 /* Coordinators */ = {
@@ -145,6 +176,7 @@
 				BBD326512323D8D9006E7DBC /* Common */,
 				BBD3265C2323D8D9006E7DBC /* CommonTests */,
 				BBD326502323D8D9006E7DBC /* Products */,
+				BB58BF4A232E6AD000A13142 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +253,7 @@
 				BBD326542323D8D9006E7DBC /* Sources */,
 				BBD326552323D8D9006E7DBC /* Frameworks */,
 				BBD326562323D8D9006E7DBC /* Resources */,
+				BB58BF51232E6BAE00A13142 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -527,6 +560,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CommonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,6 +583,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS43775FV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CommonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
