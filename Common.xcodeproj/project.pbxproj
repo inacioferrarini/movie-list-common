@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF3B232DE21300A13142 /* Internationalizable.swift */; };
+		BB58BF48232DEE2700A13142 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF47232DEE2700A13142 /* Strings.swift */; };
 		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
 		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
 		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB58BF3B232DE21300A13142 /* Internationalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internationalizable.swift; sourceTree = "<group>"; };
+		BB58BF47232DEE2700A13142 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB58BF38232DDF4900A13142 /* Internationalization */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BF3B232DE21300A13142 /* Internationalizable.swift */,
+				BB58BF47232DEE2700A13142 /* Strings.swift */,
+			);
+			path = Internationalization;
+			sourceTree = "<group>";
+		};
 		BB619191232406BA007E4C48 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +160,7 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BB58BF38232DDF4900A13142 /* Internationalization */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB6191FF23243AE3007E4C48 /* Resources */,
 				BB619191232406BA007E4C48 /* Coordinators */,
@@ -298,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */,
 				BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
@@ -307,6 +322,7 @@
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
 				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
 				BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */,
+				BB58BF48232DEE2700A13142 /* Strings.swift in Sources */,
 				BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
