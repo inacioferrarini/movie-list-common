@@ -37,9 +37,9 @@ public struct Assets {
     
     /// Icons from the asset catalog
     public struct Icons {
-        
+
         private static let selectedIconTintColor = Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue
-        
+
         /// Icons for each App Module
         public struct Modules {
             /// Icon to be used for favorite module
@@ -48,13 +48,16 @@ public struct Assets {
             public static let catalog = image("MoviesCatalogIcon", tint: selectedIconTintColor)
         }
 
-        /// Icon to be used for checked status
-        public static let check = image("CheckmarkIcon")
-        /// Icon to be used for favorite movies
-        public static let favoriteFull = image("FavoriteFullIcon")
-        /// Icon to be used for non-favorite movies
-        public static let favoriteGray = image("FavoriteGrayIcon")
-        
+        /// Icons for status
+        public struct Status {
+            /// Icon to be used for checked status
+            public static let check = image("CheckmarkIcon")
+            /// Icon to be used for favorite movies
+            public static let favoriteFull = image("FavoriteFullIcon")
+            /// Icon to be used for non-favorite movies
+            public static let favoriteGray = image("FavoriteGrayIcon")
+        }
+
         /// Icons for each App action
         public struct Actions {
             /// Icon for filter action
@@ -64,20 +67,15 @@ public struct Assets {
         }
 
     }
-    
+
     private static func color(_ colorName: String) -> UIColor? {
         return UIColor(named: colorName, in: Bundle(for: PrivateAssets.self), compatibleWith: nil)
     }
-    
-    private static func color(_ colorName: String, `default`: UIColor) -> UIColor {
-        guard let assetColor = color(colorName) else { return `default` }
-        return assetColor
-    }
-    
+
     private static func image(_ imageName: String) -> UIImage? {
         return UIImage(named: imageName, in: Bundle(for: PrivateAssets.self), compatibleWith: nil)
     }
-    
+
     private static func image(_ imageName: String, tint: UIColor) -> UIImage? {
         return image(imageName)?.tint(with: tint)
     }

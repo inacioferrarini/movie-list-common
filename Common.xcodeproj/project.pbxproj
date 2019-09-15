@@ -33,6 +33,7 @@
 		BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */; };
 		BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF90232E8C3D00A13142 /* ImageTintColor.png */; };
 		BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF94232E907A00A13142 /* ImageTintColorRed.png */; };
+		BB58BFC9232EAB0E00A13142 /* AssetsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */; };
 		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
 		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
 		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
@@ -98,6 +99,7 @@
 		BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintSpec.swift"; sourceTree = "<group>"; };
 		BB58BF90232E8C3D00A13142 /* ImageTintColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColor.png; sourceTree = "<group>"; };
 		BB58BF94232E907A00A13142 /* ImageTintColorRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColorRed.png; sourceTree = "<group>"; };
+		BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsSpec.swift; sourceTree = "<group>"; };
 		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,14 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		BB58BFC7232EAAF100A13142 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BB619191232406BA007E4C48 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +340,7 @@
 				BB58BF77232E804000A13142 /* Initialization */,
 				BB58BF54232E6CE700A13142 /* Internationalization */,
 				BB58BF8A232E874A00A13142 /* Extensions */,
+				BB58BFC7232EAAF100A13142 /* Resources */,
 				BBD3265F2323D8D9006E7DBC /* Info.plist */,
 			);
 			path = CommonTests;
@@ -496,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB58BF89232E85DB00A13142 /* ViewCodedViewControllerSpec.swift in Sources */,
+				BB58BFC9232EAB0E00A13142 /* AssetsSpec.swift in Sources */,
 				BB58BF7F232E835F00A13142 /* XibedViewSpec.swift in Sources */,
 				BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */,
 				BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */,
