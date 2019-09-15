@@ -9,6 +9,7 @@ import UIKit
 /// UITabBar.
 public protocol Module: AnyObject {
 
+    /// Returns the `Coordinator` for the `Module`
     var coordinator: Coordinator { get }
-    
+
 }

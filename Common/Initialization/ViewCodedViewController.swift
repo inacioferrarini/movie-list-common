@@ -6,9 +6,13 @@ import UIKit
 public protocol ViewCodedViewController: Instantiable {}
 
 public extension ViewCodedViewController where Self: UIViewController {
-    
+
+    /// Returns an instance of the given object.
+    /// Since objects can fail to instantiate, it is safer to assume they may fail.
+    ///
+    /// - Returns: Instantiated object
     static func instantiate() -> Self? {
         return Self()
     }
-    
+
 }

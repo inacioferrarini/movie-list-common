@@ -1,15 +1,11 @@
-//
-//  UIColor+Inits.swift
-//  Common
-//
-//  Created by José Inácio Athayde Ferrarini on 07/09/19.
-//  Copyright © 2019 José Inácio Athayde Ferrarini. All rights reserved.
-//
-
 import UIKit
 
 extension UIColor {
     
+    /// Creates an `UIColor` from the given hexcode.
+    /// The hex code can be either 6 (RGB), 7 (#RGB) or 8 (RGBA) or 9 (#RGBA) characters long.
+    ///
+    /// - Parameter hex: The hexadecimal color code. `nil` will be returned if the given code does cannot be mapped to a proper color.
     public convenience init?(hex: String) {
         let r, g, b, a: CGFloat
         

@@ -5,6 +5,11 @@ import UIKit
 /// Note that this object differs from the regular `Instantiable` since it aims to mark Storyboard-based `View`.
 public protocol Storyboarded: Instantiable {
     
+    /// Instantiates the `ViewController` from the Storyboard with the given name,
+    /// located in the same bundle as the class to be instantiated.
+    ///
+    /// - Parameter storyboard: The storyboard to be instantiated.
+    /// - Returns: `Self`?
     static func instantiate(from storyboard: String) -> Self?
     
 }
