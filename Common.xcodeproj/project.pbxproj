@@ -29,6 +29,10 @@
 		BB58BF85232E849400A13142 /* StoryboardedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF84232E849400A13142 /* StoryboardedSpec.swift */; };
 		BB58BF87232E858B00A13142 /* TestViewCodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */; };
 		BB58BF89232E85DB00A13142 /* ViewCodedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */; };
+		BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF8C232E877000A13142 /* UIColor+UtilSpec.swift */; };
+		BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */; };
+		BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF90232E8C3D00A13142 /* ImageTintColor.png */; };
+		BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF94232E907A00A13142 /* ImageTintColorRed.png */; };
 		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
 		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
 		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
@@ -41,7 +45,7 @@
 		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBE2E32D232B1DCA008D811D /* UIColor+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIColor+Tint.swift */; };
+		BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,10 @@
 		BB58BF84232E849400A13142 /* StoryboardedSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardedSpec.swift; sourceTree = "<group>"; };
 		BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewCodedViewController.swift; sourceTree = "<group>"; };
 		BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodedViewControllerSpec.swift; sourceTree = "<group>"; };
+		BB58BF8C232E877000A13142 /* UIColor+UtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UtilSpec.swift"; sourceTree = "<group>"; };
+		BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintSpec.swift"; sourceTree = "<group>"; };
+		BB58BF90232E8C3D00A13142 /* ImageTintColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColor.png; sourceTree = "<group>"; };
+		BB58BF94232E907A00A13142 /* ImageTintColorRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColorRed.png; sourceTree = "<group>"; };
 		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +113,7 @@
 		BBD326532323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD326582323D8D9006E7DBC /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD3265F2323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBE2E32C232B1DCA008D811D /* UIColor+Tint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tint.swift"; sourceTree = "<group>"; };
+		BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Tint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,8 @@
 		BB58BF59232E6D5500A13142 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB58BF90232E8C3D00A13142 /* ImageTintColor.png */,
+				BB58BF94232E907A00A13142 /* ImageTintColorRed.png */,
 				BB58BF63232E6E9500A13142 /* StringsSpec.strings */,
 			);
 			path = Resources;
@@ -205,6 +215,23 @@
 				BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */,
 			);
 			path = Initialization;
+			sourceTree = "<group>";
+		};
+		BB58BF8A232E874A00A13142 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BF8B232E876000A13142 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB58BF8B232E876000A13142 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB58BF8C232E877000A13142 /* UIColor+UtilSpec.swift */,
+				BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		BB619191232406BA007E4C48 /* Coordinators */ = {
@@ -256,7 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				BB61920623244503007E4C48 /* UIColor+Util.swift */,
-				BBE2E32C232B1DCA008D811D /* UIColor+Tint.swift */,
+				BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -302,6 +329,7 @@
 				BB58BF59232E6D5500A13142 /* Resources */,
 				BB58BF77232E804000A13142 /* Initialization */,
 				BB58BF54232E6CE700A13142 /* Internationalization */,
+				BB58BF8A232E874A00A13142 /* Extensions */,
 				BBD3265F2323D8D9006E7DBC /* Info.plist */,
 			);
 			path = CommonTests;
@@ -410,9 +438,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */,
 				BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */,
 				BB58BF81232E842500A13142 /* TestStoryboarded.storyboard in Resources */,
 				BB58BF7D232E826D00A13142 /* TestXibedView.xib in Resources */,
+				BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */,
 				BB58BF6A232E796600A13142 /* TestClass.strings in Resources */,
 				BB58BF76232E7FDA00A13142 /* TestXibedViewController.xib in Resources */,
 			);
@@ -450,7 +480,7 @@
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
-				BBE2E32D232B1DCA008D811D /* UIColor+Tint.swift in Sources */,
+				BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */,
 				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
 				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
@@ -466,6 +496,7 @@
 			files = (
 				BB58BF89232E85DB00A13142 /* ViewCodedViewControllerSpec.swift in Sources */,
 				BB58BF7F232E835F00A13142 /* XibedViewSpec.swift in Sources */,
+				BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */,
 				BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */,
 				BB58BF67232E793B00A13142 /* TestClass.swift in Sources */,
 				BB58BF83232E843900A13142 /* TestStoryboarded.swift in Sources */,
@@ -473,6 +504,7 @@
 				BB58BF79232E80A400A13142 /* XibedViewControllerSpec.swift in Sources */,
 				BB58BF75232E7FDA00A13142 /* TestXibedViewController.swift in Sources */,
 				BB58BF85232E849400A13142 /* StoryboardedSpec.swift in Sources */,
+				BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */,
 				BB58BF7B232E824000A13142 /* TestXibedView.swift in Sources */,
 				BB58BF87232E858B00A13142 /* TestViewCodedViewController.swift in Sources */,
 			);
