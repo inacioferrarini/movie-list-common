@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB19D9A223303D1C004DECD6 /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D99D23303D1C004DECD6 /* ArrayDataProvider.swift */; };
+		BB19D9A323303D1C004DECD6 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D99E23303D1C004DECD6 /* DataProvider.swift */; };
+		BB19D9A423303D1C004DECD6 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D99F23303D1C004DECD6 /* Refreshable.swift */; };
+		BB19D9A523303D1C004DECD6 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9A123303D1C004DECD6 /* ArrayDataSource.swift */; };
+		BB19D9AB23304078004DECD6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9AA23304078004DECD6 /* Configurable.swift */; };
+		BB19D9AD233040AC004DECD6 /* TableViewArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9AC233040AC004DECD6 /* TableViewArrayDataSource.swift */; };
+		BB19D9AF23304199004DECD6 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9AE23304199004DECD6 /* NSObjectExtensions.swift */; };
+		BB19D9B12330420B004DECD6 /* CollectionViewArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B02330420B004DECD6 /* CollectionViewArrayDataSource.swift */; };
 		BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF3B232DE21300A13142 /* Internationalizable.swift */; };
 		BB58BF48232DEE2700A13142 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF47232DEE2700A13142 /* Strings.swift */; };
 		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
@@ -74,6 +82,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB19D99D23303D1C004DECD6 /* ArrayDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
+		BB19D99E23303D1C004DECD6 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		BB19D99F23303D1C004DECD6 /* Refreshable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
+		BB19D9A123303D1C004DECD6 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		BB19D9AA23304078004DECD6 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		BB19D9AC233040AC004DECD6 /* TableViewArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewArrayDataSource.swift; sourceTree = "<group>"; };
+		BB19D9AE23304199004DECD6 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		BB19D9B02330420B004DECD6 /* CollectionViewArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewArrayDataSource.swift; sourceTree = "<group>"; };
 		BB58BF3B232DE21300A13142 /* Internationalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internationalizable.swift; sourceTree = "<group>"; };
 		BB58BF47232DEE2700A13142 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -139,6 +155,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB19D99B23303D1C004DECD6 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D99C23303D1C004DECD6 /* Providers */,
+				BB19D9A023303D1C004DECD6 /* Arrays */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BB19D99C23303D1C004DECD6 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D99D23303D1C004DECD6 /* ArrayDataProvider.swift */,
+				BB19D99E23303D1C004DECD6 /* DataProvider.swift */,
+				BB19D99F23303D1C004DECD6 /* Refreshable.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		BB19D9A023303D1C004DECD6 /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D9A123303D1C004DECD6 /* ArrayDataSource.swift */,
+			);
+			path = Arrays;
+			sourceTree = "<group>";
+		};
+		BB19D9A623304017004DECD6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D9A723304021004DECD6 /* Cell */,
+				BB19D9A82330402B004DECD6 /* DataSource */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BB19D9A723304021004DECD6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D9AA23304078004DECD6 /* Configurable.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BB19D9A82330402B004DECD6 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D9A923304032004DECD6 /* Arrays */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BB19D9A923304032004DECD6 /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D9B02330420B004DECD6 /* CollectionViewArrayDataSource.swift */,
+				BB19D9AC233040AC004DECD6 /* TableViewArrayDataSource.swift */,
+			);
+			path = Arrays;
+			sourceTree = "<group>";
+		};
 		BB58BF38232DDF4900A13142 /* Internationalization */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				BB619205232444EF007E4C48 /* UIKit */,
+				BB19D9AE23304199004DECD6 /* NSObjectExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,11 +399,13 @@
 			isa = PBXGroup;
 			children = (
 				BB619191232406BA007E4C48 /* Coordinators */,
+				BB19D99B23303D1C004DECD6 /* DataSource */,
+				BB619204232444E7007E4C48 /* Extensions */,
 				BB619195232406BA007E4C48 /* Initialization */,
 				BB58BF38232DDF4900A13142 /* Internationalization */,
-				BB619204232444E7007E4C48 /* Extensions */,
-				BB6191FF23243AE3007E4C48 /* Resources */,
 				BB619193232406BA007E4C48 /* Module */,
+				BB6191FF23243AE3007E4C48 /* Resources */,
+				BB19D9A623304017004DECD6 /* UIKit */,
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
 			);
@@ -487,18 +567,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB19D9A423303D1C004DECD6 /* Refreshable.swift in Sources */,
 				BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */,
+				BB19D9AB23304078004DECD6 /* Configurable.swift in Sources */,
 				BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
+				BB19D9B12330420B004DECD6 /* CollectionViewArrayDataSource.swift in Sources */,
+				BB19D9AF23304199004DECD6 /* NSObjectExtensions.swift in Sources */,
 				BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */,
 				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
+				BB19D9AD233040AC004DECD6 /* TableViewArrayDataSource.swift in Sources */,
 				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
+				BB19D9A523303D1C004DECD6 /* ArrayDataSource.swift in Sources */,
 				BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */,
+				BB19D9A323303D1C004DECD6 /* DataProvider.swift in Sources */,
 				BB58BF48232DEE2700A13142 /* Strings.swift in Sources */,
 				BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */,
+				BB19D9A223303D1C004DECD6 /* ArrayDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
