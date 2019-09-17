@@ -27,6 +27,8 @@ public struct Assets {
         public struct NavigationBar {
             /// Color to be used for background
             public static let backgroundColor = color("NavigationBarBackgroundColor")
+            /// Color to be used for text background
+            public static let textBackgroundColor = color("NavigationBarTextBackgroundColor")
             /// Color to be used for title
             public static let titleColor = color("NavigationBarTitleTextColor")
             /// Color to be used for icons
