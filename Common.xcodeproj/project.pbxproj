@@ -187,18 +187,9 @@
 		BB19D9A623304017004DECD6 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				BB19D9A723304021004DECD6 /* Cell */,
 				BB19D9A82330402B004DECD6 /* DataSource */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		BB19D9A723304021004DECD6 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				BB19D9AA23304078004DECD6 /* Configurable.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		BB19D9A82330402B004DECD6 /* DataSource */ = {
@@ -364,7 +355,6 @@
 			isa = PBXGroup;
 			children = (
 				BB619205232444EF007E4C48 /* UIKit */,
-				BB19D9AE23304199004DECD6 /* NSObjectExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -377,6 +367,33 @@
 				BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BB65244E2333BCF000C7472A /* Fw */ = {
+			isa = PBXGroup;
+			children = (
+				BB6524512333BDB000C7472A /* Configurable */,
+				BB19D99B23303D1C004DECD6 /* DataSource */,
+				BB65244F2333BD1000C7472A /* Extensions */,
+				BB19D9A623304017004DECD6 /* UIKit */,
+			);
+			path = Fw;
+			sourceTree = "<group>";
+		};
+		BB65244F2333BD1000C7472A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D9AE23304199004DECD6 /* NSObjectExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB6524512333BDB000C7472A /* Configurable */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D9AA23304078004DECD6 /* Configurable.swift */,
+			);
+			path = Configurable;
 			sourceTree = "<group>";
 		};
 		BBD326452323D8D9006E7DBC = {
@@ -401,14 +418,13 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BB65244E2333BCF000C7472A /* Fw */,
 				BB619191232406BA007E4C48 /* Coordinators */,
-				BB19D99B23303D1C004DECD6 /* DataSource */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB619195232406BA007E4C48 /* Initialization */,
 				BB58BF38232DDF4900A13142 /* Internationalization */,
 				BB619193232406BA007E4C48 /* Module */,
 				BB6191FF23243AE3007E4C48 /* Resources */,
-				BB19D9A623304017004DECD6 /* UIKit */,
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
 			);
