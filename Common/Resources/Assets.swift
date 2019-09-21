@@ -93,7 +93,6 @@ public struct Assets {
             return image
         }
 
-        
     }
 
     private static func color(_ colorName: String) -> UIColor? {

@@ -27,6 +27,8 @@
 		BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09923365D5F00F02CE5 /* NotFoundView.swift */; };
 		BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */; };
 		BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09D233669B700F02CE5 /* UIView+Extras.swift */; };
+		BB46E0A62336A04600F02CE5 /* PageLoaderTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E0A42336A04600F02CE5 /* PageLoaderTableViewDelegate.swift */; };
+		BB46E0A72336A04600F02CE5 /* TableViewBlockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E0A52336A04600F02CE5 /* TableViewBlockDelegate.swift */; };
 		BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF3B232DE21300A13142 /* Internationalizable.swift */; };
 		BB58BF48232DEE2700A13142 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF47232DEE2700A13142 /* Strings.swift */; };
 		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
@@ -114,6 +116,8 @@
 		BB46E09923365D5F00F02CE5 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
 		BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
 		BB46E09D233669B700F02CE5 /* UIView+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
+		BB46E0A42336A04600F02CE5 /* PageLoaderTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLoaderTableViewDelegate.swift; sourceTree = "<group>"; };
+		BB46E0A52336A04600F02CE5 /* TableViewBlockDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewBlockDelegate.swift; sourceTree = "<group>"; };
 		BB58BF3B232DE21300A13142 /* Internationalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internationalizable.swift; sourceTree = "<group>"; };
 		BB58BF47232DEE2700A13142 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -182,8 +186,8 @@
 		BB19D99B23303D1C004DECD6 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				BB19D99C23303D1C004DECD6 /* Providers */,
 				BB19D9A023303D1C004DECD6 /* Arrays */,
+				BB19D99C23303D1C004DECD6 /* Providers */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				BB19D9A82330402B004DECD6 /* DataSource */,
+				BB46E0A223369FD400F02CE5 /* Delegate */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -277,6 +282,30 @@
 				BB46E09D233669B700F02CE5 /* UIView+Extras.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BB46E0A023369F3F00F02CE5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB19D99B23303D1C004DECD6 /* DataSource */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BB46E0A123369F8500F02CE5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BB46E0A223369FD400F02CE5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BB46E0A42336A04600F02CE5 /* PageLoaderTableViewDelegate.swift */,
+				BB46E0A52336A04600F02CE5 /* TableViewBlockDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		BB58BF38232DDF4900A13142 /* Internationalization */ = {
@@ -445,8 +474,9 @@
 		BB65244E2333BCF000C7472A /* Ness */ = {
 			isa = PBXGroup;
 			children = (
+				BB46E0A023369F3F00F02CE5 /* Core */,
+				BB46E0A123369F8500F02CE5 /* CoreData */,
 				BB6524512333BDB000C7472A /* Configurable */,
-				BB19D99B23303D1C004DECD6 /* DataSource */,
 				BB65244F2333BD1000C7472A /* Extensions */,
 				BB58BF38232DDF4900A13142 /* Internationalization */,
 				BB19D9A623304017004DECD6 /* UIKit */,
@@ -673,12 +703,14 @@
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
 				BB19D9B12330420B004DECD6 /* CollectionViewArrayDataSource.swift in Sources */,
+				BB46E0A72336A04600F02CE5 /* TableViewBlockDelegate.swift in Sources */,
 				BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */,
 				BB19D9AF23304199004DECD6 /* NSObjectExtensions.swift in Sources */,
 				BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */,
 				BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */,
 				BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
+				BB46E0A62336A04600F02CE5 /* PageLoaderTableViewDelegate.swift in Sources */,
 				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
 				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,

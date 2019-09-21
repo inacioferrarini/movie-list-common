@@ -24,27 +24,13 @@
 import Foundation
 
 ///
-/// Adds useful capabilities to NSObject.
+/// The capability some `DataProviders` has to be refreshable.
 ///
-extension NSObject {
-   
+public protocol Refreshable {
+
     ///
-    /// Extracts the simple class name of a given type.
-    /// As in Swift the types names are composed with the modules they are located,
-    /// this method extracts the type name without the module name.
+    /// Refreshes the `DataProvider` object.
     ///
-    /// - returns: The simple class name of the type
-    ///
-    /// ### Usage Example: ###
-    /// ````
-    /// let name = "".simpleClassName() // returns "NSString"
-    /// ````
-    ///
-    open class func simpleClassName() -> String {
-        guard let className = object_getClass(self) else { return "" }
-        let fullClassName: String = NSStringFromClass(className)
-        let classNameComponents = fullClassName.split {$0 == "."}.map(String.init)
-        return classNameComponents.last!
-    }
-    
+    func refresh() throws
+
 }
