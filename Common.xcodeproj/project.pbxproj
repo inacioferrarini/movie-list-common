@@ -20,6 +20,13 @@
 		BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07C2335C47800F02CE5 /* Date+Components.swift */; };
 		BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07F2335DCB000F02CE5 /* ImageCache.swift */; };
 		BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E0812335DFE200F02CE5 /* UIImage+Download.swift */; };
+		BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09123365C8B00F02CE5 /* ErrorView.swift */; };
+		BB46E09423365CA700F02CE5 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46E09323365CA700F02CE5 /* ErrorView.xib */; };
+		BB46E09623365D3C00F02CE5 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46E09523365D3C00F02CE5 /* LoadingView.xib */; };
+		BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09723365D4A00F02CE5 /* LoadingView.swift */; };
+		BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09923365D5F00F02CE5 /* NotFoundView.swift */; };
+		BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */; };
+		BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09D233669B700F02CE5 /* UIView+Extras.swift */; };
 		BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF3B232DE21300A13142 /* Internationalizable.swift */; };
 		BB58BF48232DEE2700A13142 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF47232DEE2700A13142 /* Strings.swift */; };
 		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
@@ -100,6 +107,13 @@
 		BB46E07C2335C47800F02CE5 /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
 		BB46E07F2335DCB000F02CE5 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		BB46E0812335DFE200F02CE5 /* UIImage+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Download.swift"; sourceTree = "<group>"; };
+		BB46E09123365C8B00F02CE5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		BB46E09323365CA700F02CE5 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		BB46E09523365D3C00F02CE5 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		BB46E09723365D4A00F02CE5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BB46E09923365D5F00F02CE5 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
+		BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
+		BB46E09D233669B700F02CE5 /* UIView+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
 		BB58BF3B232DE21300A13142 /* Internationalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internationalizable.swift; sourceTree = "<group>"; };
 		BB58BF47232DEE2700A13142 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -233,6 +247,36 @@
 				BB46E07F2335DCB000F02CE5 /* ImageCache.swift */,
 			);
 			path = Cache;
+			sourceTree = "<group>";
+		};
+		BB46E08923365BFB00F02CE5 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB46E09F233669D100F02CE5 /* Extension */,
+				BB46E08A23365C0A00F02CE5 /* Views */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BB46E08A23365C0A00F02CE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB46E09123365C8B00F02CE5 /* ErrorView.swift */,
+				BB46E09323365CA700F02CE5 /* ErrorView.xib */,
+				BB46E09723365D4A00F02CE5 /* LoadingView.swift */,
+				BB46E09523365D3C00F02CE5 /* LoadingView.xib */,
+				BB46E09923365D5F00F02CE5 /* NotFoundView.swift */,
+				BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB46E09F233669D100F02CE5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB46E09D233669B700F02CE5 /* UIView+Extras.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		BB58BF38232DDF4900A13142 /* Internationalization */ = {
@@ -453,6 +497,7 @@
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB6191FF23243AE3007E4C48 /* Resources */,
 				BB46E07E2335DC6B00F02CE5 /* Cache */,
+				BB46E08923365BFB00F02CE5 /* UIKit */,
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
 			);
@@ -570,7 +615,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB46E09623365D3C00F02CE5 /* LoadingView.xib in Resources */,
+				BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */,
 				BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */,
+				BB46E09423365CA700F02CE5 /* ErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,17 +663,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */,
 				BB19D9A423303D1C004DECD6 /* Refreshable.swift in Sources */,
 				BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */,
 				BB19D9AB23304078004DECD6 /* Configurable.swift in Sources */,
 				BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
+				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
 				BB19D9B12330420B004DECD6 /* CollectionViewArrayDataSource.swift in Sources */,
+				BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */,
 				BB19D9AF23304199004DECD6 /* NSObjectExtensions.swift in Sources */,
 				BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */,
 				BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */,
+				BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
 				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
