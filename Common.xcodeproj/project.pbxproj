@@ -532,7 +532,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "José Inácio Athayde Ferrarini";
 				TargetAttributes = {
 					BBD3264E2323D8D9006E7DBC = {
@@ -552,6 +552,7 @@
 				en,
 				"en-US",
 				"pt-BR",
+				Base,
 			);
 			mainGroup = BBD326452323D8D9006E7DBC;
 			productRefGroup = BBD326502323D8D9006E7DBC /* Products */;
@@ -698,6 +699,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -762,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
