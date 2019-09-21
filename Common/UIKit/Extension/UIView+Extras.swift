@@ -23,10 +23,9 @@ public extension UIView {
         self.viewWithTag(LoadingView.loadingViewTag)?.removeFromSuperview()
     }
 
-    func showNotFoundView(expression: String) {
+    func showNotFoundView(message: String) {
         let view = NotFoundView()
-        let notFoundTextMustGoToTheBundle = "Sua busca por \"\(expression)\" não resultou em nenhum resultado"
-        view.setup(with: notFoundTextMustGoToTheBundle)
+        view.setup(with: message)
         self.addSubview(view)
         self.bringSubviewToFront(view)
     }
