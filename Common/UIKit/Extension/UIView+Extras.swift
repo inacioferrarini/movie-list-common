@@ -24,6 +24,8 @@ public extension UIView {
 
     func showNotFoundView(expression: String) {
         let view = NotFoundView()
+        let notFoundTextMustGoToTheBundle = "Sua busca por \"\(expression)\" não resultou em nenhum resultado"
+        view.setup(with: notFoundTextMustGoToTheBundle)
         self.addSubview(view)
         self.bringSubviewToFront(view)
     }

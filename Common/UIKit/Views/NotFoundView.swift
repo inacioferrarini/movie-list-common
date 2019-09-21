@@ -9,6 +9,8 @@ open class NotFoundView: UIView {
     // MARK: - Outlets
 
     @IBOutlet weak private(set) var contentView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     // MARK: - Initialization
 
@@ -42,4 +44,9 @@ open class NotFoundView: UIView {
         self.tag = NotFoundView.notFoundViewTag
     }
 
+    public func setup(with text: String, image: UIImage? = Assets.Icons.Actions.search) {
+        self.imageView.image = image
+        self.errorLabel.text = text
+    }
+    
 }
