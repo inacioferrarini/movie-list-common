@@ -10,8 +10,7 @@ open class LoadingView: UIView {
 
     @IBOutlet weak private(set) var contentView: UIView!
     @IBOutlet weak private(set) var spinner: UIActivityIndicatorView!
-    
-    
+
     // MARK: - Initialization
 
     /// Initializes the view with using `UIScreen.main.bounds` as frame.
