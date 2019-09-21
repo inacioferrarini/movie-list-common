@@ -9,7 +9,9 @@ open class ErrorView: UIView {
     // MARK: - Outlets
 
     @IBOutlet weak private(set) var contentView: UIView!
-    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var errorLabel: UILabel!
+
     // MARK: - Initialization
     
     /// Initializes the view with using `UIScreen.main.bounds` as frame.
@@ -42,4 +44,9 @@ open class ErrorView: UIView {
         self.tag = ErrorView.errorViewTag
     }
 
+    public func setup(with text: String) {
+//        self.imageView.image = image
+        self.errorLabel.text = text
+    }
+    
 }
