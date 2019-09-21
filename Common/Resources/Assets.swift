@@ -68,6 +68,32 @@ public struct Assets {
             public static let search = image("SearchIcon")
         }
 
+        static func errorIcon(with size: CGSize) -> UIImage? {
+            UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+            if let cgContext = UIGraphicsGetCurrentContext() {
+                let frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+                UIColor(hex: "#951315")?.setFill()
+                cgContext.fillEllipse(in: frame)
+
+                cgContext.setLineWidth(8.0)
+                UIColor.white.setStroke()
+                
+                cgContext.move(to: CGPoint(x: size.width/4, y: size.height/4))
+                cgContext.addLine(to: CGPoint(x: size.width/4 * 3, y: size.height/4 * 3))
+                cgContext.strokePath()
+                
+                cgContext.move(to: CGPoint(x: size.width/4 * 3, y: size.height/4))
+                cgContext.addLine(to: CGPoint(x: size.width/4, y: size.height/4 * 3))
+                cgContext.strokePath()
+            }
+
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+
+            return image
+        }
+
+        
     }
 
     private static func color(_ colorName: String) -> UIColor? {

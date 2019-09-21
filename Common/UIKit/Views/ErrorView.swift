@@ -45,8 +45,8 @@ open class ErrorView: UIView {
     }
 
     public func setup(with text: String) {
-//        self.imageView.image = image
+        self.imageView.image = Assets.Icons.errorIcon(with: CGSize(width: 128, height: 128))
         self.errorLabel.text = text
     }
-    
+
 }

@@ -4,6 +4,7 @@ public extension UIView {
 
     func showErrorView(message: String) {
         let view = ErrorView()
+        view.setup(with: message)
         self.addSubview(view)
         self.bringSubviewToFront(view)
     }

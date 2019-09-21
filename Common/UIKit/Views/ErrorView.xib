@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjQ-Q2-BGB" userLabel="Container">
-                    <rect key="frame" x="143" y="340" width="128" height="216"/>
+                    <rect key="frame" x="143" y="364" width="128" height="168"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYd-e9-2sr">
-                            <rect key="frame" x="0.0" y="192" width="128" height="24"/>
+                            <rect key="frame" x="0.0" y="144" width="128" height="24"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                         <constraint firstAttribute="bottom" secondItem="SYd-e9-2sr" secondAttribute="bottom" id="4aC-A1-zdy"/>
                         <constraint firstItem="eMv-U8-Y5k" firstAttribute="top" secondItem="IjQ-Q2-BGB" secondAttribute="top" id="7Ku-66-w2T"/>
                         <constraint firstItem="SYd-e9-2sr" firstAttribute="leading" secondItem="IjQ-Q2-BGB" secondAttribute="leading" id="DGh-4C-ski"/>
-                        <constraint firstItem="SYd-e9-2sr" firstAttribute="top" secondItem="eMv-U8-Y5k" secondAttribute="bottom" constant="64" id="R6s-aK-qQ1"/>
+                        <constraint firstItem="SYd-e9-2sr" firstAttribute="top" secondItem="eMv-U8-Y5k" secondAttribute="bottom" constant="16" id="R6s-aK-qQ1"/>
                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eMv-U8-Y5k" secondAttribute="trailing" id="TQV-iV-qT5"/>
                         <constraint firstItem="eMv-U8-Y5k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IjQ-Q2-BGB" secondAttribute="leading" id="aGV-9R-rmX"/>
                         <constraint firstAttribute="trailing" secondItem="SYd-e9-2sr" secondAttribute="trailing" id="c7d-AI-Fnc"/>
@@ -52,6 +52,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="IjQ-Q2-BGB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="97A-w4-D7Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IjQ-Q2-BGB" secondAttribute="trailing" constant="32" id="SNC-FS-goW"/>
                 <constraint firstItem="IjQ-Q2-BGB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZZh-xN-joB"/>
                 <constraint firstItem="IjQ-Q2-BGB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oIc-KH-v8S"/>
             </constraints>
