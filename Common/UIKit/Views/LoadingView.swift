@@ -9,6 +9,8 @@ open class LoadingView: UIView {
     // MARK: - Outlets
 
     @IBOutlet weak private(set) var contentView: UIView!
+    @IBOutlet weak private(set) var spinner: UIActivityIndicatorView!
+    
     
     // MARK: - Initialization
 
