@@ -18,6 +18,8 @@
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
 		BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07C2335C47800F02CE5 /* Date+Components.swift */; };
+		BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07F2335DCB000F02CE5 /* ImageCache.swift */; };
+		BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E0812335DFE200F02CE5 /* UIImage+Download.swift */; };
 		BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF3B232DE21300A13142 /* Internationalizable.swift */; };
 		BB58BF48232DEE2700A13142 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF47232DEE2700A13142 /* Strings.swift */; };
 		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
@@ -96,6 +98,8 @@
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		BB46E07C2335C47800F02CE5 /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
+		BB46E07F2335DCB000F02CE5 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		BB46E0812335DFE200F02CE5 /* UIImage+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Download.swift"; sourceTree = "<group>"; };
 		BB58BF3B232DE21300A13142 /* Internationalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internationalizable.swift; sourceTree = "<group>"; };
 		BB58BF47232DEE2700A13142 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -221,6 +225,14 @@
 				BB619193232406BA007E4C48 /* Module */,
 			);
 			path = Zuth;
+			sourceTree = "<group>";
+		};
+		BB46E07E2335DC6B00F02CE5 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				BB46E07F2335DCB000F02CE5 /* ImageCache.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		BB58BF38232DDF4900A13142 /* Internationalization */ = {
@@ -381,6 +393,7 @@
 				BB61920623244503007E4C48 /* UIColor+Util.swift */,
 				BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */,
 				BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */,
+				BB46E0812335DFE200F02CE5 /* UIImage+Download.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -439,6 +452,7 @@
 				BB65244E2333BCF000C7472A /* Ness */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB6191FF23243AE3007E4C48 /* Resources */,
+				BB46E07E2335DC6B00F02CE5 /* Cache */,
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
 			);
@@ -614,10 +628,12 @@
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
 				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
 				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
+				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,
 				BB19D9AD233040AC004DECD6 /* TableViewArrayDataSource.swift in Sources */,
 				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
 				BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */,
 				BB19D9A523303D1C004DECD6 /* ArrayDataSource.swift in Sources */,
+				BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */,
 				BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */,
 				BB19D9A323303D1C004DECD6 /* DataProvider.swift in Sources */,
 				BB58BF48232DEE2700A13142 /* Strings.swift in Sources */,
