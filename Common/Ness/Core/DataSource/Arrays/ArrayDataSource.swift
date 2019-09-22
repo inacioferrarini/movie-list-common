@@ -28,6 +28,7 @@ import UIKit
 ///
 open class ArrayDataSource<Type: Equatable>: NSObject {
 
+
     // MARK: - Properties
 
     ///
@@ -41,6 +42,7 @@ open class ArrayDataSource<Type: Equatable>: NSObject {
     ///
     open var onRefresh: (() -> Void)?
 
+
     // MARK: - Initialization
 
     ///
@@ -51,6 +53,7 @@ open class ArrayDataSource<Type: Equatable>: NSObject {
     public init(with dataProvider: ArrayDataProvider<Type>) {
         self.dataProvider = dataProvider
     }
+
 
     // MARK: - Public Methods
 

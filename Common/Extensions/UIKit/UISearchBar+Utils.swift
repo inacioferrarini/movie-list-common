@@ -1,11 +1,11 @@
 import UIKit
 
 extension UISearchBar {
-    
+
     public func setTextBackground(_ color: UIColor?) {
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = color
     }
-    
+
     public func setCenteredPlaceHolder() {
         let textFieldInsideSearchBar = self.value(forKey: "searchField") as? UITextField
 

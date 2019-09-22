@@ -240,9 +240,7 @@ open class CoreDataProvider<EntityType: NSManagedObject>: ArrayDataProvider<Enti
     /// - returns `EntityType`.
     ///
     override public subscript(indexPath: IndexPath) -> EntityType? {
-        get {
-            return self.fetchedResultsController.object(at: indexPath)
-        }
+        return self.fetchedResultsController.object(at: indexPath)
     }
 
     ///

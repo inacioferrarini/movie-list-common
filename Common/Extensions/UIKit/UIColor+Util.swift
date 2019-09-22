@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIColor {
-    
+
     /// Creates an `UIColor` from the given hexcode.
     /// The hex code can be either 6 (RGB), 7 (#RGB) or 8 (RGBA) or 9 (#RGBA) characters long.
     ///
@@ -13,7 +13,7 @@ extension UIColor {
         if hex.hasPrefix("#") {
             startIndex = 1
         }
-        
+
         let start = hex.index(hex.startIndex, offsetBy: startIndex)
 
         var hexColor = String(hex[start...])
@@ -39,5 +39,5 @@ extension UIColor {
 
         return nil
     }
-    
+
 }

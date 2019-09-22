@@ -28,21 +28,23 @@ import UIKit
 ///
 open class CollectionViewArrayDataSource<CellType: UICollectionViewCell, Type: Equatable>: ArrayDataSource<Type>, UICollectionViewDataSource
     where CellType: Configurable {
-    
+
+
     // MARK: - Properties
-    
+
     ///
     /// TableView that owns this DataSource.
     ///
     public let collectionView: UICollectionView
-    
+
     ///
     /// Returns the Reuse Identifier for a Cell at the given `IndexPath`.
     ///
     let reuseIdentifier: ((IndexPath) -> (String))
 
+
     // MARK: - Initialization
-    
+
     ///
     /// Inits the DataSource providing an UICollectionView and its objects.
     /// Assumes the ReuseIdentifier will have the same name as `CellType` type.
@@ -59,7 +61,7 @@ open class CollectionViewArrayDataSource<CellType: UICollectionViewCell, Type: E
                   reuseIdentifier: reuseIdentifier,
                   with: dataProvider)
     }
-    
+
     ///
     /// Inits the DataSource providing an UICollectionView and its objects.
     ///
@@ -77,8 +79,9 @@ open class CollectionViewArrayDataSource<CellType: UICollectionViewCell, Type: E
         super.init(with: dataProvider)
     }
 
+
     // MARK: - Public Methods
-    
+
     ///
     /// Propagates through `onRefresh` a refresh for interested objects and also
     /// calls `reloadData` on `tableView`.
@@ -88,8 +91,9 @@ open class CollectionViewArrayDataSource<CellType: UICollectionViewCell, Type: E
         self.collectionView.reloadData()
     }
 
+
     // MARK: - Collection View Data Source
-    
+
     ///
     /// Returns the number of items in its only section. The number of items always matches the number of contained objects.
     ///
@@ -102,7 +106,7 @@ open class CollectionViewArrayDataSource<CellType: UICollectionViewCell, Type: E
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.dataProvider.numberOfItems(in: section)
     }
-    
+
     ///
     /// Returns the number of items in its only section. The number of rows always matches the number of contained objects.
     ///
@@ -115,11 +119,11 @@ open class CollectionViewArrayDataSource<CellType: UICollectionViewCell, Type: E
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let reuseIdentifier = self.reuseIdentifier(indexPath)
         guard var cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CellType else { return UICollectionViewCell() }
-        
+
         if let value = self.dataProvider[indexPath] as? CellType.ValueType {
             cell.setup(with: value)
         }
-        
+
         return cell
     }
 

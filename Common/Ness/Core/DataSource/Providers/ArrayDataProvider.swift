@@ -35,6 +35,7 @@ import UIKit
 ///
 open class ArrayDataProvider<ElementType: Equatable>: NSObject, DataProvider {
 
+
     // MARK: - Properties
 
     ///
@@ -46,6 +47,7 @@ open class ArrayDataProvider<ElementType: Equatable>: NSObject, DataProvider {
     /// Section titles.
     ///
 	public var titles: [String]?
+
 
     // MARK: - Initialization
 
@@ -80,6 +82,7 @@ open class ArrayDataProvider<ElementType: Equatable>: NSObject, DataProvider {
 		self.elements = sections
 		self.titles = titles
 	}
+
 
     // MARK: - Data Provider Implementation
 

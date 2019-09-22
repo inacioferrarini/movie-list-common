@@ -5,21 +5,23 @@ open class ErrorView: UIView {
 
     /// Public identifier for ErrorView
     public static let errorViewTag = 200
-    
+
+
     // MARK: - Outlets
 
     @IBOutlet weak private(set) var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var errorLabel: UILabel!
 
+
     // MARK: - Initialization
-    
+
     /// Initializes the view with using `UIScreen.main.bounds` as frame.
     public required init() {
         super.init(frame: UIScreen.main.bounds)
         commonInit()
     }
-    
+
     /// Initializes the view with using the given `frame`.
     /// - Parameter frame: Initial view dimensions.
     public override init(frame: CGRect) {

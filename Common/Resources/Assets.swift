@@ -5,10 +5,10 @@ private class PrivateAssets {}
 /// Assets for the project.
 /// Provides an easy, global access to the project resources.
 public struct Assets {
-    
+
     /// Colors from the asset catalog
     public struct Colors {
-        
+
         /// TabBar colors
         public struct TabBar {
             /// Color to be used for background
@@ -22,7 +22,7 @@ public struct Assets {
             /// Color to be used for default tab bar item icon
             public static let unselectedIconColor = color("TabBarUnselectedIconColor")
         }
-        
+
         /// NavigationBar colors
         public struct NavigationBar {
             /// Color to be used for background
@@ -36,7 +36,7 @@ public struct Assets {
         }
 
     }
-    
+
     /// Icons from the asset catalog
     public struct Icons {
 
@@ -77,11 +77,11 @@ public struct Assets {
 
                 cgContext.setLineWidth(8.0)
                 UIColor.white.setStroke()
-                
+
                 cgContext.move(to: CGPoint(x: size.width/4, y: size.height/4))
                 cgContext.addLine(to: CGPoint(x: size.width/4 * 3, y: size.height/4 * 3))
                 cgContext.strokePath()
-                
+
                 cgContext.move(to: CGPoint(x: size.width/4 * 3, y: size.height/4))
                 cgContext.addLine(to: CGPoint(x: size.width/4, y: size.height/4 * 3))
                 cgContext.strokePath()

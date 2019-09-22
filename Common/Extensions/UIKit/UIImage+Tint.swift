@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIImage {
-    
+
     /// Returns a new image created by applying the given tint to the original image.
     /// The returned image will have rendering mode `RenderingMode.alwaysOriginal`.
     ///

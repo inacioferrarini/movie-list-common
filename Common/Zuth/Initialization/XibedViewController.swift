@@ -16,5 +16,5 @@ public extension XibedViewController where Self: UIViewController {
         let bundle = Bundle(for: Self.self)
         return Self(nibName: className, bundle: bundle)
     }
-    
+
 }

@@ -1,7 +1,7 @@
 import UIKit
 
 public extension UIView {
-    
+
     /// Shows an error view
     /// - Parameter message: The message to be displayed inside the view
     func showErrorView(message: String) {
@@ -22,7 +22,7 @@ public extension UIView {
         self.addSubview(view)
         self.bringSubviewToFront(view)
     }
-    
+
     /// Hides the loading view, if presented
     func hideLoadingView() {
         self.viewWithTag(LoadingView.loadingViewTag)?.removeFromSuperview()

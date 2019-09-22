@@ -6,12 +6,14 @@ open class NotFoundView: UIView {
     /// Public identifier for ErrorView
     public static let notFoundViewTag = 600
 
+
     // MARK: - Outlets
 
     @IBOutlet weak private(set) var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var errorLabel: UILabel!
-    
+
+
     // MARK: - Initialization
 
     /// Initializes the view with using `UIScreen.main.bounds` as frame.
@@ -48,5 +50,5 @@ open class NotFoundView: UIView {
         self.imageView.image = image
         self.errorLabel.text = text
     }
-    
+
 }

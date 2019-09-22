@@ -13,9 +13,9 @@ class ViewCodedViewControllerSpec: QuickSpec {
                 expect(sut).toNot(beNil())
                 expect(sut?.title).to(equal("TestViewCodedViewController Title"))
             }
-            
+
         }
-        
+
     }
-    
+
 }

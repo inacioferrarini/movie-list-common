@@ -7,11 +7,11 @@ class AssetsSpec: QuickSpec {
     override func spec() {
 
         describe("Resources tests") {
-            
+
             describe("Color assets") {
                 
                 describe("TabBar colors must return a Color") {
-                    
+
                     it("backgroundColor property") {
                         let color = Assets.Colors.TabBar.backgroundColor
                         expect(color).toNot(beNil())
@@ -21,17 +21,17 @@ class AssetsSpec: QuickSpec {
                         let color = Assets.Colors.TabBar.selectedTextColor
                         expect(color).toNot(beNil())
                     }
-                    
+
                     it("unselectedTextColor property") {
                         let color = Assets.Colors.TabBar.unselectedTextColor
                         expect(color).toNot(beNil())
                     }
-                    
+
                     it("selectedIconColor property") {
                         let color = Assets.Colors.TabBar.selectedIconColor
                         expect(color).toNot(beNil())
                     }
-                    
+
                     it("unselectedIconColor property") {
                         let color = Assets.Colors.TabBar.unselectedIconColor
                         expect(color).toNot(beNil())
@@ -40,26 +40,26 @@ class AssetsSpec: QuickSpec {
                 }
 
                 describe("NavigationBar colors must return a Color") {
-                    
+
                     it("backgroundColor property") {
                         let color = Assets.Colors.NavigationBar.backgroundColor
                         expect(color).toNot(beNil())
                     }
-                    
+
                     it("titleColor property") {
                         let color = Assets.Colors.NavigationBar.titleColor
                         expect(color).toNot(beNil())
                     }
-                    
+
                     it("iconColor property") {
                         let color = Assets.Colors.NavigationBar.iconColor
                         expect(color).toNot(beNil())
                     }
-                    
+
                 }
 
             }
-            
+
             describe("Icons assets") {
 
                 describe("Modules icons must return an Image") {
@@ -75,7 +75,7 @@ class AssetsSpec: QuickSpec {
                     }
 
                 }
-                
+
                 describe("Status icons must return an Image") {
 
                     it("check icon") {
@@ -112,7 +112,7 @@ class AssetsSpec: QuickSpec {
             }
 
         }
-        
+
     }
-    
+
 }

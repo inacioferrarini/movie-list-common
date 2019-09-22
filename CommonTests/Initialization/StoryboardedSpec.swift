@@ -3,9 +3,9 @@ import Nimble
 @testable import Common
 
 class StoryboardedSpec: QuickSpec {
-    
+
     override func spec() {
-        
+
         describe("Initialization") {
             
             it("Must initialize the ViewController from instantiate()") {
@@ -19,9 +19,9 @@ class StoryboardedSpec: QuickSpec {
                 expect(sut).toNot(beNil())
                 expect(sut?.title).to(equal("TestStoryboarded Title"))
             }
-            
+
         }
-        
+
     }
-    
+
 }

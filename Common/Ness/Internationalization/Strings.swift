@@ -46,5 +46,5 @@ public struct Strings {
         }
         return `default`
     }
-    
+
 }

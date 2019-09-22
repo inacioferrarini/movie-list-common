@@ -6,7 +6,7 @@ import UIKit
 public protocol XibedView: Instantiable {}
 
 public extension XibedView where Self: UIView {
-    
+
     /// Instantiates the `View` from a Xib with the same name,
     /// located in the same bundle as the class to be instantiated.
     ///
@@ -16,5 +16,5 @@ public extension XibedView where Self: UIView {
         let bundle = Bundle(for: Self.self)
         return bundle.loadNibNamed(className, owner: nil, options: nil)?.first as? Self
     }
-    
+
 }

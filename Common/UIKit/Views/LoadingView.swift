@@ -6,10 +6,12 @@ open class LoadingView: UIView {
     /// Public identifier for ErrorView
     public static let loadingViewTag = 400
 
+
     // MARK: - Outlets
 
     @IBOutlet weak private(set) var contentView: UIView!
     @IBOutlet weak private(set) var spinner: UIActivityIndicatorView!
+
 
     // MARK: - Initialization
 
@@ -32,7 +34,7 @@ open class LoadingView: UIView {
         super.init(coder: aDecoder)
         commonInit()
     }
-    
+
     private func commonInit() {
         let bundle = Bundle(for: type(of: self))
         let className = String(describing: type(of: self))
@@ -42,5 +44,5 @@ open class LoadingView: UIView {
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.tag = LoadingView.loadingViewTag
     }
-    
+
 }
