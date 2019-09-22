@@ -72,6 +72,8 @@
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBD508BB23371125009CA4EE /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD508BA23371125009CA4EE /* AppContext.swift */; };
+		BBD508BF23373198009CA4EE /* CollectionViewBlockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD508BE23373198009CA4EE /* CollectionViewBlockDelegate.swift */; };
+		BBD508C1233732FC009CA4EE /* PageLoaderCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD508C0233732FC009CA4EE /* PageLoaderCollectionViewDelegate.swift */; };
 		BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +169,8 @@
 		BBD326582323D8D9006E7DBC /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD3265F2323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD508BA23371125009CA4EE /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		BBD508BE23373198009CA4EE /* CollectionViewBlockDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBlockDelegate.swift; sourceTree = "<group>"; };
+		BBD508C0233732FC009CA4EE /* PageLoaderCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageLoaderCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Tint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -313,6 +317,8 @@
 		BB46E0A223369FD400F02CE5 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				BBD508BE23373198009CA4EE /* CollectionViewBlockDelegate.swift */,
+				BBD508C0233732FC009CA4EE /* PageLoaderCollectionViewDelegate.swift */,
 				BB46E0A42336A04600F02CE5 /* PageLoaderTableViewDelegate.swift */,
 				BB46E0A52336A04600F02CE5 /* TableViewBlockDelegate.swift */,
 			);
@@ -751,6 +757,7 @@
 				BB19D9AB23304078004DECD6 /* Configurable.swift in Sources */,
 				BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
+				BBD508C1233732FC009CA4EE /* PageLoaderCollectionViewDelegate.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
@@ -772,6 +779,7 @@
 				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
 				BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */,
 				BB19D9A523303D1C004DECD6 /* ArrayDataSource.swift in Sources */,
+				BBD508BF23373198009CA4EE /* CollectionViewBlockDelegate.swift in Sources */,
 				BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */,
 				BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */,
 				BB46E0B12336A62800F02CE5 /* CoreDataStack.swift in Sources */,
