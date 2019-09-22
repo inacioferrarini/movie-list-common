@@ -46,6 +46,11 @@ open class NotFoundView: UIView {
         self.tag = NotFoundView.notFoundViewTag
     }
 
+    ///
+    /// Configures the view with the given parameters.
+    /// - Parameter text: Error message to be displayed
+    /// - Parameter image: Error icon to be displayed
+    ///
     public func setup(with text: String, image: UIImage? = Assets.Icons.Actions.search) {
         self.imageView.image = image
         self.errorLabel.text = text

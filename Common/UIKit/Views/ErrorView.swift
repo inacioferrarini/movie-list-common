@@ -46,6 +46,8 @@ open class ErrorView: UIView {
         self.tag = ErrorView.errorViewTag
     }
 
+    /// Configures the view with the given parameters.
+    /// - Parameter text: Error message to be displayed
     public func setup(with text: String) {
         self.imageView.image = Assets.Icons.errorIcon(with: CGSize(width: 128, height: 128))
         self.errorLabel.text = text

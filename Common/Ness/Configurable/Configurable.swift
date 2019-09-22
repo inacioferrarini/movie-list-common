@@ -28,6 +28,7 @@ import Foundation
 ///
 public protocol Configurable {
 
+    /// Configurable type
     associatedtype ValueType
 
     ///

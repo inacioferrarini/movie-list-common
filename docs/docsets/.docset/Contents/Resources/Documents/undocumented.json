@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/inacio.ferrarini/Developer/iOS/Evaluations/Concrete/MovieListApp/Modules/Common/Common/UIKit/Views/ErrorView.swift",
+      "line": 49,
+      "symbol": "ErrorView.setup(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/inacio.ferrarini/Developer/iOS/Evaluations/Concrete/MovieListApp/Modules/Common/Common/UIKit/Views/NotFoundView.swift",
+      "line": 49,
+      "symbol": "NotFoundView.setup(with:image:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/inacio.ferrarini/Developer/iOS/Evaluations/Concrete/MovieListApp/Modules/Common"
+}

@@ -3,6 +3,7 @@ import Foundation
 /// Provides a Cache to store images
 public class ImageCache {
 
+    /// Singleton access
     public static let shared = ImageCache()
 
     private let imageCache = NSCache<NSString, UIImage>()
