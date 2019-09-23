@@ -13,4 +13,7 @@ public protocol Coordinator: AnyObject {
     /// Starts the `Coordinator`
     func start()
 
+    /// Ends the `Coordinator`
+    func finish()
+
 }
