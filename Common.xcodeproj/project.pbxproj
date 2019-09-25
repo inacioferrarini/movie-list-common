@@ -45,29 +45,11 @@
 		BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF63232E6E9500A13142 /* StringsSpec.strings */; };
 		BB58BF67232E793B00A13142 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF66232E793B00A13142 /* TestClass.swift */; };
 		BB58BF6A232E796600A13142 /* TestClass.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF6C232E796600A13142 /* TestClass.strings */; };
-		BB58BF75232E7FDA00A13142 /* TestXibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF73232E7FDA00A13142 /* TestXibedViewController.swift */; };
-		BB58BF76232E7FDA00A13142 /* TestXibedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF74232E7FDA00A13142 /* TestXibedViewController.xib */; };
-		BB58BF79232E80A400A13142 /* XibedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF78232E80A400A13142 /* XibedViewControllerSpec.swift */; };
-		BB58BF7B232E824000A13142 /* TestXibedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF7A232E824000A13142 /* TestXibedView.swift */; };
-		BB58BF7D232E826D00A13142 /* TestXibedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF7C232E826D00A13142 /* TestXibedView.xib */; };
-		BB58BF7F232E835F00A13142 /* XibedViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF7E232E835F00A13142 /* XibedViewSpec.swift */; };
-		BB58BF81232E842500A13142 /* TestStoryboarded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF80232E842500A13142 /* TestStoryboarded.storyboard */; };
-		BB58BF83232E843900A13142 /* TestStoryboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF82232E843900A13142 /* TestStoryboarded.swift */; };
-		BB58BF85232E849400A13142 /* StoryboardedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF84232E849400A13142 /* StoryboardedSpec.swift */; };
-		BB58BF87232E858B00A13142 /* TestViewCodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */; };
-		BB58BF89232E85DB00A13142 /* ViewCodedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */; };
 		BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF8C232E877000A13142 /* UIColor+UtilSpec.swift */; };
 		BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */; };
 		BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF90232E8C3D00A13142 /* ImageTintColor.png */; };
 		BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF94232E907A00A13142 /* ImageTintColorRed.png */; };
 		BB58BFC9232EAB0E00A13142 /* AssetsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */; };
-		BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619192232406BA007E4C48 /* Coordinator.swift */; };
-		BB61919C232406BA007E4C48 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619194232406BA007E4C48 /* Module.swift */; };
-		BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619196232406BA007E4C48 /* XibedViewController.swift */; };
-		BB61919E232406BA007E4C48 /* XibedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619197232406BA007E4C48 /* XibedView.swift */; };
-		BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619198232406BA007E4C48 /* Instantiable.swift */; };
-		BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB619199232406BA007E4C48 /* Storyboarded.swift */; };
-		BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */; };
 		BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* CommonAssets.xcassets */; };
 		BB61920323243B01007E4C48 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920223243B01007E4C48 /* Assets.swift */; };
 		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
@@ -141,29 +123,11 @@
 		BB58BF64232E6E9600A13142 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
 		BB58BF66232E793B00A13142 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
 		BB58BF6B232E796600A13142 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/TestClass.strings"; sourceTree = "<group>"; };
-		BB58BF73232E7FDA00A13142 /* TestXibedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibedViewController.swift; sourceTree = "<group>"; };
-		BB58BF74232E7FDA00A13142 /* TestXibedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibedViewController.xib; sourceTree = "<group>"; };
-		BB58BF78232E80A400A13142 /* XibedViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibedViewControllerSpec.swift; sourceTree = "<group>"; };
-		BB58BF7A232E824000A13142 /* TestXibedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibedView.swift; sourceTree = "<group>"; };
-		BB58BF7C232E826D00A13142 /* TestXibedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibedView.xib; sourceTree = "<group>"; };
-		BB58BF7E232E835F00A13142 /* XibedViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibedViewSpec.swift; sourceTree = "<group>"; };
-		BB58BF80232E842500A13142 /* TestStoryboarded.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboarded.storyboard; sourceTree = "<group>"; };
-		BB58BF82232E843900A13142 /* TestStoryboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStoryboarded.swift; sourceTree = "<group>"; };
-		BB58BF84232E849400A13142 /* StoryboardedSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardedSpec.swift; sourceTree = "<group>"; };
-		BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewCodedViewController.swift; sourceTree = "<group>"; };
-		BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodedViewControllerSpec.swift; sourceTree = "<group>"; };
 		BB58BF8C232E877000A13142 /* UIColor+UtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UtilSpec.swift"; sourceTree = "<group>"; };
 		BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintSpec.swift"; sourceTree = "<group>"; };
 		BB58BF90232E8C3D00A13142 /* ImageTintColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColor.png; sourceTree = "<group>"; };
 		BB58BF94232E907A00A13142 /* ImageTintColorRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColorRed.png; sourceTree = "<group>"; };
 		BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsSpec.swift; sourceTree = "<group>"; };
-		BB619192232406BA007E4C48 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		BB619194232406BA007E4C48 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
-		BB619196232406BA007E4C48 /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
-		BB619197232406BA007E4C48 /* XibedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedView.swift; sourceTree = "<group>"; };
-		BB619198232406BA007E4C48 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
-		BB619199232406BA007E4C48 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCodedViewController.swift; sourceTree = "<group>"; };
 		BB61920023243AFC007E4C48 /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
 		BB61920223243B01007E4C48 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		BB61920623244503007E4C48 /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
@@ -251,16 +215,6 @@
 				BB19D9AC233040AC004DECD6 /* TableViewArrayDataSource.swift */,
 			);
 			path = Arrays;
-			sourceTree = "<group>";
-		};
-		BB1ABA6D23346C2300B6D672 /* Zuth */ = {
-			isa = PBXGroup;
-			children = (
-				BB619191232406BA007E4C48 /* Coordinators */,
-				BB619195232406BA007E4C48 /* Initialization */,
-				BB619193232406BA007E4C48 /* Module */,
-			);
-			path = Zuth;
 			sourceTree = "<group>";
 		};
 		BB46E07E2335DC6B00F02CE5 /* Cache */ = {
@@ -404,7 +358,6 @@
 		BB58BF65232E792200A13142 /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
-				BB58BF6E232E7ECE00A13142 /* Initialization */,
 				BB58BF6D232E7EB000A13142 /* Internationalization */,
 			);
 			path = HelperClasses;
@@ -417,31 +370,6 @@
 				BB58BF6C232E796600A13142 /* TestClass.strings */,
 			);
 			path = Internationalization;
-			sourceTree = "<group>";
-		};
-		BB58BF6E232E7ECE00A13142 /* Initialization */ = {
-			isa = PBXGroup;
-			children = (
-				BB58BF73232E7FDA00A13142 /* TestXibedViewController.swift */,
-				BB58BF74232E7FDA00A13142 /* TestXibedViewController.xib */,
-				BB58BF7A232E824000A13142 /* TestXibedView.swift */,
-				BB58BF7C232E826D00A13142 /* TestXibedView.xib */,
-				BB58BF82232E843900A13142 /* TestStoryboarded.swift */,
-				BB58BF80232E842500A13142 /* TestStoryboarded.storyboard */,
-				BB58BF86232E858B00A13142 /* TestViewCodedViewController.swift */,
-			);
-			path = Initialization;
-			sourceTree = "<group>";
-		};
-		BB58BF77232E804000A13142 /* Initialization */ = {
-			isa = PBXGroup;
-			children = (
-				BB58BF78232E80A400A13142 /* XibedViewControllerSpec.swift */,
-				BB58BF7E232E835F00A13142 /* XibedViewSpec.swift */,
-				BB58BF84232E849400A13142 /* StoryboardedSpec.swift */,
-				BB58BF88232E85DB00A13142 /* ViewCodedViewControllerSpec.swift */,
-			);
-			path = Initialization;
 			sourceTree = "<group>";
 		};
 		BB58BF8A232E874A00A13142 /* Extensions */ = {
@@ -467,34 +395,6 @@
 				BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		BB619191232406BA007E4C48 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				BB619192232406BA007E4C48 /* Coordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		BB619193232406BA007E4C48 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				BB619194232406BA007E4C48 /* Module.swift */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		BB619195232406BA007E4C48 /* Initialization */ = {
-			isa = PBXGroup;
-			children = (
-				BB619196232406BA007E4C48 /* XibedViewController.swift */,
-				BB619197232406BA007E4C48 /* XibedView.swift */,
-				BB619198232406BA007E4C48 /* Instantiable.swift */,
-				BB619199232406BA007E4C48 /* Storyboarded.swift */,
-				BB61919A232406BA007E4C48 /* ViewCodedViewController.swift */,
-			);
-			path = Initialization;
 			sourceTree = "<group>";
 		};
 		BB6191FF23243AE3007E4C48 /* Resources */ = {
@@ -579,7 +479,6 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				BB1ABA6D23346C2300B6D672 /* Zuth */,
 				BB65244E2333BCF000C7472A /* Ness */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB6191FF23243AE3007E4C48 /* Resources */,
@@ -596,7 +495,6 @@
 			children = (
 				BB58BF65232E792200A13142 /* HelperClasses */,
 				BB58BF59232E6D5500A13142 /* TestResources */,
-				BB58BF77232E804000A13142 /* Initialization */,
 				BB58BF54232E6CE700A13142 /* Internationalization */,
 				BB58BF8A232E874A00A13142 /* Extensions */,
 				BB58BFC7232EAAF100A13142 /* Resources */,
@@ -723,11 +621,8 @@
 			files = (
 				BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */,
 				BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */,
-				BB58BF81232E842500A13142 /* TestStoryboarded.storyboard in Resources */,
-				BB58BF7D232E826D00A13142 /* TestXibedView.xib in Resources */,
 				BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */,
 				BB58BF6A232E796600A13142 /* TestClass.strings in Resources */,
-				BB58BF76232E7FDA00A13142 /* TestXibedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,11 +657,9 @@
 				BB19D9A423303D1C004DECD6 /* Refreshable.swift in Sources */,
 				BB58BF3C232DE21300A13142 /* Internationalizable.swift in Sources */,
 				BB19D9AB23304078004DECD6 /* Configurable.swift in Sources */,
-				BB61919B232406BA007E4C48 /* Coordinator.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BBD508C1233732FC009CA4EE /* PageLoaderCollectionViewDelegate.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
-				BB6191A1232406BA007E4C48 /* ViewCodedViewController.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
 				BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */,
 				BB19D9B12330420B004DECD6 /* CollectionViewArrayDataSource.swift in Sources */,
@@ -780,21 +673,16 @@
 				BB46E0AF2336A62800F02CE5 /* NSManagedObject+Fetch.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
 				BB46E0A62336A04600F02CE5 /* PageLoaderTableViewDelegate.swift in Sources */,
-				BB61919E232406BA007E4C48 /* XibedView.swift in Sources */,
-				BB61919F232406BA007E4C48 /* Instantiable.swift in Sources */,
 				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,
 				BB19D9AD233040AC004DECD6 /* TableViewArrayDataSource.swift in Sources */,
-				BB61919C232406BA007E4C48 /* Module.swift in Sources */,
 				BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */,
 				BB19D9A523303D1C004DECD6 /* ArrayDataSource.swift in Sources */,
 				BBD508BF23373198009CA4EE /* CollectionViewBlockDelegate.swift in Sources */,
 				BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */,
-				BB61919D232406BA007E4C48 /* XibedViewController.swift in Sources */,
 				BB46E0B12336A62800F02CE5 /* CoreDataStack.swift in Sources */,
 				BB19D9A323303D1C004DECD6 /* DataProvider.swift in Sources */,
 				BBD508BB23371125009CA4EE /* AppContext.swift in Sources */,
 				BB58BF48232DEE2700A13142 /* Strings.swift in Sources */,
-				BB6191A0232406BA007E4C48 /* Storyboarded.swift in Sources */,
 				BB19D9A223303D1C004DECD6 /* ArrayDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -803,20 +691,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB58BF89232E85DB00A13142 /* ViewCodedViewControllerSpec.swift in Sources */,
 				BB58BFC9232EAB0E00A13142 /* AssetsSpec.swift in Sources */,
-				BB58BF7F232E835F00A13142 /* XibedViewSpec.swift in Sources */,
 				BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */,
 				BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */,
 				BB58BF67232E793B00A13142 /* TestClass.swift in Sources */,
-				BB58BF83232E843900A13142 /* TestStoryboarded.swift in Sources */,
 				BB58BF56232E6D0300A13142 /* StringsSpec.swift in Sources */,
-				BB58BF79232E80A400A13142 /* XibedViewControllerSpec.swift in Sources */,
-				BB58BF75232E7FDA00A13142 /* TestXibedViewController.swift in Sources */,
-				BB58BF85232E849400A13142 /* StoryboardedSpec.swift in Sources */,
 				BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */,
-				BB58BF7B232E824000A13142 /* TestXibedView.swift in Sources */,
-				BB58BF87232E858B00A13142 /* TestViewCodedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
