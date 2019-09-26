@@ -25,11 +25,6 @@
 		BB58BF4E232E6AD000A13142 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; };
 		BB58BF52232E6BBC00A13142 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB58BF53232E6BBC00A13142 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BB58BF56232E6D0300A13142 /* StringsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF55232E6D0300A13142 /* StringsSpec.swift */; };
-		BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF57232E6D1400A13142 /* InternationalizableSpec.swift */; };
-		BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF63232E6E9500A13142 /* StringsSpec.strings */; };
-		BB58BF67232E793B00A13142 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF66232E793B00A13142 /* TestClass.swift */; };
-		BB58BF6A232E796600A13142 /* TestClass.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF6C232E796600A13142 /* TestClass.strings */; };
 		BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF8C232E877000A13142 /* UIColor+UtilSpec.swift */; };
 		BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */; };
 		BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF90232E8C3D00A13142 /* ImageTintColor.png */; };
@@ -38,6 +33,7 @@
 		BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* CommonAssets.xcassets */; };
 		BB61920323243B01007E4C48 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920223243B01007E4C48 /* Assets.swift */; };
 		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
+		BBBC155A233D668E00467BD4 /* SVProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB51F51823397BE90054EB57 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */; };
@@ -60,6 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BBBC155A233D668E00467BD4 /* SVProgressHUD.framework in CopyFiles */,
 				BB58BF52232E6BBC00A13142 /* Nimble.framework in CopyFiles */,
 				BB58BF53232E6BBC00A13142 /* Quick.framework in CopyFiles */,
 			);
@@ -84,12 +81,6 @@
 		BB51F51823397BE90054EB57 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		BB58BF4C232E6AD000A13142 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		BB58BF55232E6D0300A13142 /* StringsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsSpec.swift; sourceTree = "<group>"; };
-		BB58BF57232E6D1400A13142 /* InternationalizableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalizableSpec.swift; sourceTree = "<group>"; };
-		BB58BF62232E6E9500A13142 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
-		BB58BF64232E6E9600A13142 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
-		BB58BF66232E793B00A13142 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
-		BB58BF6B232E796600A13142 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/TestClass.strings"; sourceTree = "<group>"; };
 		BB58BF8C232E877000A13142 /* UIColor+UtilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UtilSpec.swift"; sourceTree = "<group>"; };
 		BB58BF8E232E877E00A13142 /* UIImage+TintSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintSpec.swift"; sourceTree = "<group>"; };
 		BB58BF90232E8C3D00A13142 /* ImageTintColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColor.png; sourceTree = "<group>"; };
@@ -177,21 +168,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB58BF54232E6CE700A13142 /* Internationalization */ = {
-			isa = PBXGroup;
-			children = (
-				BB58BF55232E6D0300A13142 /* StringsSpec.swift */,
-				BB58BF57232E6D1400A13142 /* InternationalizableSpec.swift */,
-			);
-			path = Internationalization;
-			sourceTree = "<group>";
-		};
 		BB58BF59232E6D5500A13142 /* TestResources */ = {
 			isa = PBXGroup;
 			children = (
 				BB58BF90232E8C3D00A13142 /* ImageTintColor.png */,
 				BB58BF94232E907A00A13142 /* ImageTintColorRed.png */,
-				BB58BF63232E6E9500A13142 /* StringsSpec.strings */,
 			);
 			path = TestResources;
 			sourceTree = "<group>";
@@ -199,18 +180,8 @@
 		BB58BF65232E792200A13142 /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
-				BB58BF6D232E7EB000A13142 /* Internationalization */,
 			);
 			path = HelperClasses;
-			sourceTree = "<group>";
-		};
-		BB58BF6D232E7EB000A13142 /* Internationalization */ = {
-			isa = PBXGroup;
-			children = (
-				BB58BF66232E793B00A13142 /* TestClass.swift */,
-				BB58BF6C232E796600A13142 /* TestClass.strings */,
-			);
-			path = Internationalization;
 			sourceTree = "<group>";
 		};
 		BB58BF8A232E874A00A13142 /* Extensions */ = {
@@ -305,7 +276,6 @@
 			children = (
 				BB58BF65232E792200A13142 /* HelperClasses */,
 				BB58BF59232E6D5500A13142 /* TestResources */,
-				BB58BF54232E6CE700A13142 /* Internationalization */,
 				BB58BF8A232E874A00A13142 /* Extensions */,
 				BB58BFC7232EAAF100A13142 /* Resources */,
 				BBD3265F2323D8D9006E7DBC /* Info.plist */,
@@ -422,9 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */,
-				BB58BF61232E6E9500A13142 /* StringsSpec.strings in Resources */,
 				BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */,
-				BB58BF6A232E796600A13142 /* TestClass.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,9 +445,6 @@
 			files = (
 				BB58BFC9232EAB0E00A13142 /* AssetsSpec.swift in Sources */,
 				BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */,
-				BB58BF58232E6D1400A13142 /* InternationalizableSpec.swift in Sources */,
-				BB58BF67232E793B00A13142 /* TestClass.swift in Sources */,
-				BB58BF56232E6D0300A13142 /* StringsSpec.swift in Sources */,
 				BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,26 +458,6 @@
 			targetProxy = BBD3265A2323D8D9006E7DBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BB58BF63232E6E9500A13142 /* StringsSpec.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB58BF62232E6E9500A13142 /* en-US */,
-				BB58BF64232E6E9600A13142 /* pt-BR */,
-			);
-			name = StringsSpec.strings;
-			sourceTree = "<group>";
-		};
-		BB58BF6C232E796600A13142 /* TestClass.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB58BF6B232E796600A13142 /* en-US */,
-			);
-			name = TestClass.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BBD326612323D8DA006E7DBC /* Debug */ = {
