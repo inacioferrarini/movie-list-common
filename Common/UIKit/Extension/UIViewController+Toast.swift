@@ -24,7 +24,7 @@
 import UIKit
 import SVProgressHUD
 
-extension UIViewController {
+public extension UIViewController {
 
 
     // MARK: - Toast
@@ -32,7 +32,7 @@ extension UIViewController {
     ///
     /// Displays an empty toast
     ///
-    public func toast() {
+    func toast() {
         SVProgressHUD.show()
     }
 
@@ -40,7 +40,7 @@ extension UIViewController {
     /// Displays a Toast with the given message
     /// - Parameter message: The message to be displayed
     ///
-    public func toast(withMessage message: String) {
+    func toast(withMessage message: String) {
         SVProgressHUD.show(withStatus: message)
     }
 
@@ -48,7 +48,7 @@ extension UIViewController {
     /// Displays a Toast with the given success message
     /// - Parameter message: The message to be displayed
     ///
-    public func toast(withSuccessMessage message: String) {
+    func toast(withSuccessMessage message: String) {
         SVProgressHUD.showSuccess(withStatus: message)
     }
 
@@ -56,14 +56,14 @@ extension UIViewController {
     /// Displays a Toast with the given Error message
     /// - Parameter message: The message to be displayed
     ///
-    public func toast(withErrorMessage errorMessage: String) {
+    func toast(withErrorMessage errorMessage: String) {
         SVProgressHUD.showError(withStatus: errorMessage)
     }
 
     ///
     /// Removes the toast
     ///
-    public func toastEnd() {
+    func toastEnd() {
         SVProgressHUD.dismiss()
     }
 
