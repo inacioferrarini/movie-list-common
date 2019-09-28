@@ -26,7 +26,6 @@ import SVProgressHUD
 
 public extension UIViewController {
 
-
     // MARK: - Toast
 
     ///
