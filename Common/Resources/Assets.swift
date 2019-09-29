@@ -44,48 +44,48 @@ public struct Assets {
             /// Color to be used for background
             ///
             public static let backgroundColor = color("TabBarBackgroundColor")
-            
+
             ///
             /// Color to be used for active tab bar item color
             ///
             public static let selectedTextColor = color("TabBarSelectedTextColor")
-            
+
             ///
             /// Color to be used for default tab bar item color
             ///
             public static let unselectedTextColor = color("TabBarUnselectedTextColor")
-            
+
             ///
             /// Color to be used for active tab bar item icon
             ///
             public static let selectedIconColor = color("TabBarSelectedIconColor")
-            
+
             ///
             /// Color to be used for default tab bar item icon
             ///
             public static let unselectedIconColor = color("TabBarUnselectedIconColor")
         }
-        
+
         ///
         /// NavigationBar colors
         ///
         public struct NavigationBar {
-            
+
             ///
             /// Color to be used for background
             ///
             public static let backgroundColor = color("NavigationBarBackgroundColor")
-            
+
             ///
             /// Color to be used for text background
             ///
             public static let textBackgroundColor = color("NavigationBarTextBackgroundColor")
-            
+
             ///
             /// Color to be used for title
             ///
             public static let titleColor = color("NavigationBarTitleTextColor")
-            
+
             ///
             /// Color to be used for icons
             ///
@@ -105,12 +105,12 @@ public struct Assets {
         /// Icons for each App Module
         ///
         public struct Modules {
-            
+
             ///
             /// Icon to be used for favorite module
             ///
             public static let favorite = image("FavoriteMoviesIcon", tint: selectedIconTintColor)
-            
+
             ///
             /// Icon to be used for catalog module
             ///
@@ -119,18 +119,19 @@ public struct Assets {
 
         ///
         /// Icons for status
+        ///
         public struct Status {
-            
+
             ///
             /// Icon to be used for checked status
             ///
             public static let check = image("CheckmarkIcon")
-            
+
             ///
             /// Icon to be used for favorite movies
             ///
             public static let favoriteFull = image("FavoriteFullIcon")
-            
+
             ///
             /// Icon to be used for non-favorite movies
             ///
@@ -145,7 +146,7 @@ public struct Assets {
             /// Icon for filter action
             ///
             public static let filter = image("FilterIcon")
-            
+
             ///
             /// Icon for search action
             ///
