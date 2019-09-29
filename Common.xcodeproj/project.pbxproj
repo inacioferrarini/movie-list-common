@@ -44,7 +44,6 @@
 		BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5412340E97F0020CC25 /* Genre.swift */; };
 		BBEBC5462340E97F0020CC25 /* MovieSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5422340E97F0020CC25 /* MovieSearchResult.swift */; };
 		BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5432340E97F0020CC25 /* GenreListResult.swift */; };
-		BBEBC54A2340EC690020CC25 /* PopularMoviesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5492340EC690020CC25 /* PopularMoviesRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +109,6 @@
 		BBEBC5412340E97F0020CC25 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		BBEBC5422340E97F0020CC25 /* MovieSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSearchResult.swift; sourceTree = "<group>"; };
 		BBEBC5432340E97F0020CC25 /* GenreListResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreListResult.swift; sourceTree = "<group>"; };
-		BBEBC5492340EC690020CC25 /* PopularMoviesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +302,6 @@
 		BBEBC5382340E4030020CC25 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				BBEBC5482340EC590020CC25 /* Requests */,
 				BBEBC5392340E41F0020CC25 /* Apis.swift */,
 				BBEBC53B2340E5750020CC25 /* MoviesApi.swift */,
 				BBEBC53D2340E5B70020CC25 /* GenresApi.swift */,
@@ -321,14 +318,6 @@
 				BBEBC5432340E97F0020CC25 /* GenreListResult.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		BBEBC5482340EC590020CC25 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				BBEBC5492340EC690020CC25 /* PopularMoviesRequest.swift */,
-			);
-			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,7 +464,6 @@
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
-				BBEBC54A2340EC690020CC25 /* PopularMoviesRequest.swift in Sources */,
 				BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */,
 				BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */,
 				BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */,

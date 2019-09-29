@@ -37,7 +37,6 @@ public class MoviesApi: AppBaseApi {
         let headers: [String: String]? = nil
 
         self.get(targetUrl: targetUrl,
-                 requestObject: PopularMoviesRequest(),
                  headers: headers,
                  success: success,
                  failure: failure,
