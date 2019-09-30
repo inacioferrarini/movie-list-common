@@ -19,6 +19,7 @@
 		BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09923365D5F00F02CE5 /* NotFoundView.swift */; };
 		BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */; };
 		BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09D233669B700F02CE5 /* UIView+Extras.swift */; };
+		BB4EA94423417B0800B60696 /* Ness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4EA94323417B0800B60696 /* Ness.framework */; };
 		BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */; };
 		BB51F51923397BE90054EB57 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB51F51823397BE90054EB57 /* SVProgressHUD.framework */; };
 		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
@@ -37,7 +38,7 @@
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */; };
-		BBEBC53A2340E41F0020CC25 /* Apis.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5392340E41F0020CC25 /* Apis.swift */; };
+		BBEBC53A2340E41F0020CC25 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5392340E41F0020CC25 /* APIs.swift */; };
 		BBEBC53C2340E5750020CC25 /* MoviesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC53B2340E5750020CC25 /* MoviesApi.swift */; };
 		BBEBC53E2340E5B70020CC25 /* GenresApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC53D2340E5B70020CC25 /* GenresApi.swift */; };
 		BBEBC5442340E97F0020CC25 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5402340E97F0020CC25 /* Movie.swift */; };
@@ -84,6 +85,7 @@
 		BB46E09923365D5F00F02CE5 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
 		BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
 		BB46E09D233669B700F02CE5 /* UIView+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
+		BB4EA94323417B0800B60696 /* Ness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		BB51F51823397BE90054EB57 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -102,7 +104,7 @@
 		BBD326582323D8D9006E7DBC /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD3265F2323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Tint.swift"; sourceTree = "<group>"; };
-		BBEBC5392340E41F0020CC25 /* Apis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apis.swift; sourceTree = "<group>"; };
+		BBEBC5392340E41F0020CC25 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		BBEBC53B2340E5750020CC25 /* MoviesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApi.swift; sourceTree = "<group>"; };
 		BBEBC53D2340E5B70020CC25 /* GenresApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresApi.swift; sourceTree = "<group>"; };
 		BBEBC5402340E97F0020CC25 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4EA94423417B0800B60696 /* Ness.framework in Frameworks */,
 				BB51F51923397BE90054EB57 /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +178,7 @@
 		BB58BF4A232E6AD000A13142 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB4EA94323417B0800B60696 /* Ness.framework */,
 				BB51F51823397BE90054EB57 /* SVProgressHUD.framework */,
 				BB58BF4C232E6AD000A13142 /* Nimble.framework */,
 				BB58BF4B232E6AD000A13142 /* Quick.framework */,
@@ -302,7 +306,7 @@
 		BBEBC5382340E4030020CC25 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				BBEBC5392340E41F0020CC25 /* Apis.swift */,
+				BBEBC5392340E41F0020CC25 /* APIs.swift */,
 				BBEBC53B2340E5750020CC25 /* MoviesApi.swift */,
 				BBEBC53D2340E5B70020CC25 /* GenresApi.swift */,
 			);
@@ -473,7 +477,7 @@
 				BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */,
 				BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
-				BBEBC53A2340E41F0020CC25 /* Apis.swift in Sources */,
+				BBEBC53A2340E41F0020CC25 /* APIs.swift in Sources */,
 				BBEBC53C2340E5750020CC25 /* MoviesApi.swift in Sources */,
 				BBEBC53E2340E5B70020CC25 /* GenresApi.swift in Sources */,
 				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,
