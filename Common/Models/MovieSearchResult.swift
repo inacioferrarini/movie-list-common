@@ -25,9 +25,9 @@ import Foundation
 
 public struct MovieSearchResult: Codable {
 
-    public var page: Int
-    public var totalResults: Int
-    public var totalPages: Int
-    public var results: [Movie]
+    public var page: Int?
+    public var totalResults: Int?
+    public var totalPages: Int?
+    public var results: [Movie]?
 
 }

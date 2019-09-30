@@ -20,6 +20,7 @@
 		BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */; };
 		BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09D233669B700F02CE5 /* UIView+Extras.swift */; };
 		BB4EA94423417B0800B60696 /* Ness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4EA94323417B0800B60696 /* Ness.framework */; };
+		BB4EA9462341839000B60696 /* MovieSearchResult+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EA9452341839000B60696 /* MovieSearchResult+Operator.swift */; };
 		BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */; };
 		BB51F51923397BE90054EB57 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB51F51823397BE90054EB57 /* SVProgressHUD.framework */; };
 		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
@@ -86,6 +87,7 @@
 		BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
 		BB46E09D233669B700F02CE5 /* UIView+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
 		BB4EA94323417B0800B60696 /* Ness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4EA9452341839000B60696 /* MovieSearchResult+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieSearchResult+Operator.swift"; sourceTree = "<group>"; };
 		BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		BB51F51823397BE90054EB57 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				BBEBC5412340E97F0020CC25 /* Genre.swift */,
 				BBEBC5422340E97F0020CC25 /* MovieSearchResult.swift */,
 				BBEBC5432340E97F0020CC25 /* GenreListResult.swift */,
+				BB4EA9452341839000B60696 /* MovieSearchResult+Operator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
 				BBEBC53A2340E41F0020CC25 /* APIs.swift in Sources */,
+				BB4EA9462341839000B60696 /* MovieSearchResult+Operator.swift in Sources */,
 				BBEBC53C2340E5750020CC25 /* MoviesApi.swift in Sources */,
 				BBEBC53E2340E5B70020CC25 /* GenresApi.swift in Sources */,
 				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,
