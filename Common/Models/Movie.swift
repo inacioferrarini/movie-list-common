@@ -25,6 +25,8 @@ import Foundation
 
 public struct Movie: Codable, Equatable {
 
+    public init() {}
+
     public var id: Int?
     public var title: String?
     public var overview: String?

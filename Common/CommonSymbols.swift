@@ -31,14 +31,14 @@ public let FavoriteMoviesIdsKey = "favoriteMoviesIds"
 ///
 /// Type for FavoriteMovies Ids
 ///
-public typealias FavoriteMoviesIdsTypes = [Int]
+public typealias FavoriteMoviesIdsType = [Int]
 
 ///
 /// Key for FavoriteMovies
 ///
-public let FavoriteMovies = "favoriteMovies"
+public let FavoriteMoviesKey = "favoriteMovies"
 
 ///
 /// Type for FavoriteMovies
 ///
-public typealias FavoriteMoviesTypes = [Movie]
+public typealias FavoriteMoviesType = [Movie]
