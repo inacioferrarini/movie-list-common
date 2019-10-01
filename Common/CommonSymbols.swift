@@ -24,16 +24,6 @@
 import Foundation
 
 ///
-/// Key for FavoriteMovies Ids
-///
-public let FavoriteMoviesIdsKey = "favoriteMoviesIds"
-
-///
-/// Type for FavoriteMovies Ids
-///
-public typealias FavoriteMoviesIdsType = [Int]
-
-///
 /// Key for FavoriteMovies
 ///
 public let FavoriteMoviesKey = "favoriteMovies"
