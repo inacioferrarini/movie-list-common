@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */; };
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
 		BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07C2335C47800F02CE5 /* Date+Components.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSymbols.swift; sourceTree = "<group>"; };
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		BB46E07C2335C47800F02CE5 /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BBEBC53F2340E97F0020CC25 /* Models */,
 				BBEBC5382340E4030020CC25 /* Networking */,
@@ -469,6 +472,7 @@
 			files = (
 				BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
+				BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
 				BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */,
