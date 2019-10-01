@@ -35,7 +35,7 @@ public extension AppContext {
     /// - Parameter favorite: The movie to be added to the favorite list.
     ///
     func add(favorite: Movie) {
-        guard var favoriteMovies = allFavorites() else { return }
+        var favoriteMovies = allFavorites()
         favoriteMovies.append(favorite)
         set(value: favoriteMovies, for: FavoriteMoviesKey)
     }
@@ -46,7 +46,7 @@ public extension AppContext {
     /// - Parameter favorites: The movies to be added to the favorite list.
     ///
     func add(favorites: [Movie]) {
-        guard var favoriteMovies = allFavorites() else { return }
+        var favoriteMovies = allFavorites()
         favoriteMovies.append(contentsOf: favorites)
         set(value: favoriteMovies, for: FavoriteMoviesKey)
     }
@@ -58,7 +58,7 @@ public extension AppContext {
     /// - Returns: If the movie is a favorite or not.
     ///
     func isFavorite(movieId: Int) -> Bool {
-        let favoriteMovies = allFavorites() ?? []
+        let favoriteMovies = allFavorites()
         let favoriteIds = favoriteMovies.compactMap({ return $0.id })
         return favoriteIds.contains(movieId)
     }
@@ -69,8 +69,8 @@ public extension AppContext {
     /// - Parameter favorite: The movie to be removed from favorite list.
     ///
     func remove(favorite: Movie) {
-        guard var favoriteMovies = allFavorites() else { return }
         guard let movieId = favorite.id else { return }
+        var favoriteMovies = allFavorites()
         favoriteMovies = favoriteMovies.filter({ return $0.id != movieId })
         set(value: favoriteMovies, for: FavoriteMoviesKey)
     }
@@ -80,8 +80,8 @@ public extension AppContext {
     ///
     /// - Returns: Favorite movies list
     ///
-    func allFavorites() -> FavoriteMoviesType? {
-        guard let favoriteMovies: FavoriteMoviesType = get(key: FavoriteMoviesKey) else { return nil }
+    func allFavorites() -> FavoriteMoviesType {
+        guard let favoriteMovies: FavoriteMoviesType = get(key: FavoriteMoviesKey) else { return [] }
         return favoriteMovies
     }
     

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		365FC3052343E6830004959E /* AppContext+Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FC3042343E6830004959E /* AppContext+Favorites.swift */; };
+		365FC30B2343F6B90004959E /* AppContext+FavoritesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FC30A2343F6B90004959E /* AppContext+FavoritesSpec.swift */; };
+		36EDF1142343FC4A0006100E /* String+DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF1132343FC4A0006100E /* String+DateSpec.swift */; };
+		36EDF1162343FE770006100E /* Date+ComponentsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF1152343FE770006100E /* Date+ComponentsSpec.swift */; };
 		BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */; };
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
@@ -77,6 +80,9 @@
 
 /* Begin PBXFileReference section */
 		365FC3042343E6830004959E /* AppContext+Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+Favorites.swift"; sourceTree = "<group>"; };
+		365FC30A2343F6B90004959E /* AppContext+FavoritesSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+FavoritesSpec.swift"; sourceTree = "<group>"; };
+		36EDF1132343FC4A0006100E /* String+DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateSpec.swift"; sourceTree = "<group>"; };
+		36EDF1152343FE770006100E /* Date+ComponentsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ComponentsSpec.swift"; sourceTree = "<group>"; };
 		BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSymbols.swift; sourceTree = "<group>"; };
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
@@ -212,6 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				BB58BF8B232E876000A13142 /* UIKit */,
+				365FC30A2343F6B90004959E /* AppContext+FavoritesSpec.swift */,
+				36EDF1132343FC4A0006100E /* String+DateSpec.swift */,
+				36EDF1152343FE770006100E /* Date+ComponentsSpec.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -503,9 +512,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365FC30B2343F6B90004959E /* AppContext+FavoritesSpec.swift in Sources */,
 				BB58BFC9232EAB0E00A13142 /* AssetsSpec.swift in Sources */,
 				BB58BF8D232E877000A13142 /* UIColor+UtilSpec.swift in Sources */,
 				BB58BF8F232E877E00A13142 /* UIImage+TintSpec.swift in Sources */,
+				36EDF1162343FE770006100E /* Date+ComponentsSpec.swift in Sources */,
+				36EDF1142343FC4A0006100E /* String+DateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
