@@ -24,6 +24,7 @@
 import Quick
 import Nimble
 import OHHTTPStubs
+import Common
 @testable import Ness
 
 class GenresApiSpec: QuickSpec {
@@ -39,86 +40,82 @@ class GenresApiSpec: QuickSpec {
                 }
 
                 it("must call success, if succeeds") {
-//                    // Given
-//                    stub(condition: isHost("www.apiurl.com") && isMethodGET()) { _ in
-//                        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
-//                        let error = OHHTTPStubsResponse(error:notConnectedError)
-//                        guard let fixtureFile = OHPathForFile("ApiGetRequestResponseFixture.json", type(of: self)) else { return error }
-//
-//                        return OHHTTPStubsResponse(
-//                            fileAtPath: fixtureFile,
-//                            statusCode: 200,
-//                            headers: ["Content-Type": "application/json"]
-//                        )
-//                    }
-//
-//                    let personRequest: PersonRequest? = nil
-//                    var personResponse: PersonResponse? = nil
-//                    let api = AppBaseApi("https://www.apiurl.com")
-//                    let targetUrl = "/path"
-//
-//                    // When
-//                    waitUntil { done in
-//                        api.executeRequest(
-//                            httpMethod: AppBaseApi.HttpMethod.get,
-//                            targetUrl: targetUrl,
-//                            requestObject: personRequest,
-//                            headers: nil,
-//                            success: { (response: PersonResponse?) in
-//                                personResponse = response
-//                                done()
-//                        }, failure: { _ in
-//                            fail("Mocked response returned error")
-//                            done()
-//                        }, retryAttempts: 30)
-//                    }
-//
-//                    // Then
-//                    expect(personResponse?["data"]?.count).to(equal(3))
-//
-//                    expect(personResponse?["data"]?[0].name).to(equal("John Doe"))
-//                    expect(personResponse?["data"]?[0].age).to(equal(35))
-//                    expect(personResponse?["data"]?[0].boolValue).to(equal(true))
-//
-//                    expect(personResponse?["data"]?[1].name).to(equal("John William"))
-//                    expect(personResponse?["data"]?[1].age).to(equal(40))
-//                    expect(personResponse?["data"]?[1].boolValue).to(equal(false))
-//
-//                    expect(personResponse?["data"]?[2].name).to(equal("Jacob Michael"))
-//                    expect(personResponse?["data"]?[2].age).to(equal(37))
-//                    expect(personResponse?["data"]?[2].boolValue).to(equal(true))
+                    // Given
+                    stub(condition: isHost("api.themoviedb.org") && isMethodGET()) { _ in
+                        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
+                        let error = OHHTTPStubsResponse(error:notConnectedError)
+                        guard let fixtureFile = OHPathForFile("MovieGenresResponseData.json", type(of: self)) else { return error }
+
+                        return OHHTTPStubsResponse(
+                            fileAtPath: fixtureFile,
+                            statusCode: 200,
+                            headers: ["Content-Type": "application/json"]
+                        )
+                    }
+
+                    var genresResponse: GenreListResult? = nil
+                    let api = APIs().genres
+                    
+                    // When
+                    waitUntil { done in
+                        api.genres(
+                            apiKey: "",
+                            success: { response in
+                                genresResponse = response
+                                done()
+                        }, failure: { error in
+                                fail("Mocked response returned error")
+                                done()
+                        })
+                    }
+
+                    // Then
+                    expect(genresResponse).toNot(beNil())
+                    expect(genresResponse?.genres).toNot(beNil())
+                    expect(genresResponse?.genres?.count).to(equal(4))
+
+                    let genre1 = genresResponse?.genres?[0]
+                    expect(genre1?.id).to(equal(28))
+                    expect(genre1?.name).to(equal("Action"))
+                    
+                    let genre2 = genresResponse?.genres?[1]
+                    expect(genre2?.id).to(equal(12))
+                    expect(genre2?.name).to(equal("Adventure"))
+                    
+                    let genre3 = genresResponse?.genres?[2]
+                    expect(genre3?.id).to(equal(10770))
+                    expect(genre3?.name).to(equal("TV Movie"))
+                    
+                    let genre4 = genresResponse?.genres?[3]
+                    expect(genre4?.id).to(equal(37))
+                    expect(genre4?.name).to(equal("Western"))
                 }
                 
                 it("must call failure, if fails") {
                     // Given
-//                    stub(condition: isHost("www.apiurl.com") && isMethodGET()) { _ in
-//                        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
-//                        return OHHTTPStubsResponse(error: notConnectedError)
-//                    }
-//                    
-//                    let personRequest: PersonRequest? = nil
-//                    var personResponse: PersonResponse? = nil
-//                    let api = AppBaseApi("https://www.apiurl.com")
-//                    let targetUrl = "/path"
-//                    
-//                    // When
-//                    waitUntil { done in
-//                        api.executeRequest(
-//                            httpMethod: AppBaseApi.HttpMethod.get,
-//                            targetUrl: targetUrl,
-//                            requestObject: personRequest,
-//                            headers: nil,
-//                            success: { (response: PersonResponse?) in
-//                                fail("Mocked response returned success")
-//                                personResponse = response
-//                                done()
-//                        }, failure: { _ in
-//                            done()
-//                        }, retryAttempts: 30)
-//                    }
-//                    
-//                    // Then
-//                    expect(personResponse).to(beNil())
+                    stub(condition: isHost("api.themoviedb.org") && isMethodGET()) { _ in
+                        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
+                        return OHHTTPStubsResponse(error: notConnectedError)
+                    }
+                    
+                    var genresResponse: GenreListResult? = nil
+                    let api = APIs().genres
+
+                    // When
+                    waitUntil { done in
+                        api.genres(
+                            apiKey: "",
+                            success: { response in
+                                fail("Mocked response returned success")
+                                genresResponse = response
+                                done()
+                        }, failure: { error in
+                                done()
+                        })
+                    }
+                    
+                    // Then
+                    expect(genresResponse).to(beNil())
                 }
                 
             }

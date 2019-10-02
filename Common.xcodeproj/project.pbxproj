@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		365FC3052343E6830004959E /* AppContext+Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FC3042343E6830004959E /* AppContext+Favorites.swift */; };
 		365FC30B2343F6B90004959E /* AppContext+FavoritesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FC30A2343F6B90004959E /* AppContext+FavoritesSpec.swift */; };
+		36A65D422345262C006C371E /* MostPopularMoviesResponseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 36A65D412345262C006C371E /* MostPopularMoviesResponseData.json */; };
+		36A65D45234526BC006C371E /* MovieGenresResponseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 36A65D44234526BC006C371E /* MovieGenresResponseData.json */; };
 		36EDF1142343FC4A0006100E /* String+DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF1132343FC4A0006100E /* String+DateSpec.swift */; };
 		36EDF1162343FE770006100E /* Date+ComponentsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF1152343FE770006100E /* Date+ComponentsSpec.swift */; };
 		36EDF12A234502C10006100E /* MovieSearchResult+OperatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF129234502C10006100E /* MovieSearchResult+OperatorSpec.swift */; };
@@ -19,7 +21,6 @@
 		36EDF136234513AB0006100E /* GenresApiSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF135234513AB0006100E /* GenresApiSpec.swift */; };
 		36EDF13A234516C90006100E /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EDF139234516C90006100E /* OHHTTPStubs.framework */; };
 		36EDF13B234516D60006100E /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36EDF139234516C90006100E /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		36EDF13D234518830006100E /* MostPopularMoviesResponseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF13C234518830006100E /* MostPopularMoviesResponseData.json */; };
 		BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */; };
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
@@ -91,6 +92,8 @@
 /* Begin PBXFileReference section */
 		365FC3042343E6830004959E /* AppContext+Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+Favorites.swift"; sourceTree = "<group>"; };
 		365FC30A2343F6B90004959E /* AppContext+FavoritesSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+FavoritesSpec.swift"; sourceTree = "<group>"; };
+		36A65D412345262C006C371E /* MostPopularMoviesResponseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MostPopularMoviesResponseData.json; sourceTree = "<group>"; };
+		36A65D44234526BC006C371E /* MovieGenresResponseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MovieGenresResponseData.json; sourceTree = "<group>"; };
 		36EDF1132343FC4A0006100E /* String+DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateSpec.swift"; sourceTree = "<group>"; };
 		36EDF1152343FE770006100E /* Date+ComponentsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ComponentsSpec.swift"; sourceTree = "<group>"; };
 		36EDF129234502C10006100E /* MovieSearchResult+OperatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieSearchResult+OperatorSpec.swift"; sourceTree = "<group>"; };
@@ -100,7 +103,6 @@
 		36EDF133234513810006100E /* MoviesApiSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApiSpec.swift; sourceTree = "<group>"; };
 		36EDF135234513AB0006100E /* GenresApiSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresApiSpec.swift; sourceTree = "<group>"; };
 		36EDF139234516C90006100E /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
-		36EDF13C234518830006100E /* MostPopularMoviesResponseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MostPopularMoviesResponseData.json; sourceTree = "<group>"; };
 		BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSymbols.swift; sourceTree = "<group>"; };
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
@@ -167,6 +169,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36A65D432345262E006C371E /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				36A65D44234526BC006C371E /* MovieGenresResponseData.json */,
+				36A65D412345262C006C371E /* MostPopularMoviesResponseData.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		36EDF128234502A40006100E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,9 +258,9 @@
 		BB58BF59232E6D5500A13142 /* TestResources */ = {
 			isa = PBXGroup;
 			children = (
+				36A65D432345262E006C371E /* Fixtures */,
 				BB58BF90232E8C3D00A13142 /* ImageTintColor.png */,
 				BB58BF94232E907A00A13142 /* ImageTintColorRed.png */,
-				36EDF13C234518830006100E /* MostPopularMoviesResponseData.json */,
 			);
 			path = TestResources;
 			sourceTree = "<group>";
@@ -502,8 +513,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */,
+				36A65D45234526BC006C371E /* MovieGenresResponseData.json in Resources */,
 				BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */,
-				36EDF13D234518830006100E /* MostPopularMoviesResponseData.json in Resources */,
+				36A65D422345262C006C371E /* MostPopularMoviesResponseData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

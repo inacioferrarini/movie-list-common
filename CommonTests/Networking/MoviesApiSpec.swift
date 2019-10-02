@@ -53,15 +53,15 @@ class MoviesApiSpec: QuickSpec {
                         )
                     }
 
-                    var movieSearchResult: MovieSearchResult? = nil
+                    var movieSearchResponse: MovieSearchResult? = nil
                     let api = APIs().movies
                     
                     // When
                     waitUntil { done in
                         api.popularMovies(
                             apiKey: "",
-                            success: { result in
-                                movieSearchResult = result
+                            success: { response in
+                                movieSearchResponse = response
                                 done()
                         }, failure: { error in
                                 fail("Mocked response returned error")
@@ -70,15 +70,15 @@ class MoviesApiSpec: QuickSpec {
                     }
                     
                     // Then
-                    expect(movieSearchResult).toNot(beNil())
-                    expect(movieSearchResult?.page).to(equal(1))
-                    expect(movieSearchResult?.totalResults).to(equal(2))
-                    expect(movieSearchResult?.totalPages).to(equal(1))
-                    expect(movieSearchResult?.results).toNot(beNil())
+                    expect(movieSearchResponse).toNot(beNil())
+                    expect(movieSearchResponse?.page).to(equal(1))
+                    expect(movieSearchResponse?.totalResults).to(equal(2))
+                    expect(movieSearchResponse?.totalPages).to(equal(1))
+                    expect(movieSearchResponse?.results).toNot(beNil())
                     
-                    expect(movieSearchResult?.results?.count).to(equal(2))
+                    expect(movieSearchResponse?.results?.count).to(equal(2))
                     
-                    let result0 = movieSearchResult?.results?[0]
+                    let result0 = movieSearchResponse?.results?[0]
                     expect(result0?.id).to(equal(474350))
                     expect(result0?.title).to(equal("It Chapter Two"))
                     expect(result0?.overview).to(equal("27 years after overcoming the malevolent supernatural entity Pennywise, the former members of the Losers' Club, who have grown up and moved away from Derry, are brought back together by a devastating phone call."))
@@ -88,7 +88,7 @@ class MoviesApiSpec: QuickSpec {
                     expect(result0?.genreNames).to(beNil())
                     expect(result0?.isFavorite).to(beNil())
                     
-                    let result1 = movieSearchResult?.results?[1]
+                    let result1 = movieSearchResponse?.results?[1]
                     expect(result1?.id).to(equal(429617))
                     expect(result1?.title).to(equal("Spider-Man: Far from Home"))
                     expect(result1?.overview).to(equal("Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent."))
@@ -113,9 +113,9 @@ class MoviesApiSpec: QuickSpec {
                     waitUntil { done in
                         api.popularMovies(
                             apiKey: "",
-                            success: { result in
+                            success: { response in
                                 fail("Mocked response returned success")
-                                movieSearchResult = result
+                                movieSearchResult = response
                                 done()
                         }, failure: { error in
                                 done()
