@@ -1,0 +1,46 @@
+{
+    "page": 1,
+    "total_results": 2,
+    "total_pages": 1,
+    "results": [
+        {
+            "popularity": 545.742,
+            "vote_count": 552,
+            "video": false,
+            "poster_path": "/zfE0R94v1E8cuKAerbskfD3VfUt.jpg",
+            "id": 474350,
+            "adult": false,
+            "backdrop_path": "/4W0FnjSGn4x0mKZlBRx8OjFxQUM.jpg",
+            "original_language": "en",
+            "original_title": "It Chapter Two",
+            "genre_ids": [
+                35,
+                27
+            ],
+            "title": "It Chapter Two",
+            "vote_average": 7.2,
+            "overview": "27 years after overcoming the malevolent supernatural entity Pennywise, the former members of the Losers' Club, who have grown up and moved away from Derry, are brought back together by a devastating phone call.",
+            "release_date": "2019-09-06"
+        },
+        {
+            "popularity": 335.257,
+            "vote_count": 3495,
+            "video": false,
+            "poster_path": "/lcq8dVxeeOqHvvgcte707K0KVx5.jpg",
+            "id": 429617,
+            "adult": false,
+            "backdrop_path": "/5myQbDzw3l8K9yofUXRJ4UTVgam.jpg",
+            "original_language": "en",
+            "original_title": "Spider-Man: Far from Home",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "title": "Spider-Man: Far from Home",
+            "vote_average": 7.7,
+            "overview": "Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.",
+            "release_date": "2019-07-02"
+        }
+    ]
+}

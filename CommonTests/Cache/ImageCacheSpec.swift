@@ -21,11 +21,43 @@
 //    SOFTWARE.
 //
 
-import Foundation
+import Quick
+import Nimble
+import Ness
+@testable import Common
 
-public struct GenreListResult: Codable {
+class ImageCacheSpec: QuickSpec {
+    
+    override func spec() {
+        
+        describe("Extension methods") {
 
-    public var genres: [Genre]?
+            let imageCache = ImageCache.shared
 
+            context("sotre method") {
+                
+                it("must return object if found") {
+                    imageCache.store(image: UIImage(), key: "image")
+                    let restoredImage = imageCache.image(key: "image")
+                    expect(restoredImage).toNot(beNil())
+                }
+                
+                it("must return nil if no object is found") {
+                    let restoredImage = imageCache.image(key: "image2")
+                    expect(restoredImage).to(beNil())
+                }
+
+            }
+
+//            context("") {
+//
+//                it("must return nil if not found") {
+//                }
+//
+//            }
+            
+        }
+        
+    }
+    
 }
-
