@@ -23,6 +23,8 @@
 		36EDF13B234516D60006100E /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36EDF139234516C90006100E /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */; };
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
+		BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */; };
+		BB1F18C52346E3BD00A70294 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
 		BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07C2335C47800F02CE5 /* Date+Components.swift */; };
 		BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07F2335DCB000F02CE5 /* ImageCache.swift */; };
@@ -105,6 +107,8 @@
 		36EDF139234516C90006100E /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSymbols.swift; sourceTree = "<group>"; };
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
+		BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		BB46E07C2335C47800F02CE5 /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
 		BB46E07F2335DCB000F02CE5 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 		BB46E08A23365C0A00F02CE5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */,
+				BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */,
 				BB46E09123365C8B00F02CE5 /* ErrorView.swift */,
 				BB46E09323365CA700F02CE5 /* ErrorView.xib */,
 				BB46E09723365D4A00F02CE5 /* LoadingView.swift */,
@@ -502,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB46E09623365D3C00F02CE5 /* LoadingView.xib in Resources */,
+				BB1F18C52346E3BD00A70294 /* EmptyStateView.xib in Resources */,
 				BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */,
 				BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */,
 				BB46E09423365CA700F02CE5 /* ErrorView.xib in Resources */,
@@ -558,6 +565,7 @@
 				BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */,
 				BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */,
 				BBEBC5462340E97F0020CC25 /* MovieSearchResult.swift in Sources */,
+				BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */,
 				BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */,
 				BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,

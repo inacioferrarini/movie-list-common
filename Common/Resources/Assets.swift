@@ -91,6 +91,17 @@ public struct Assets {
             ///
             public static let iconColor = color("NavigationBarIconColor")
         }
+        
+        ///
+        /// NavigationBar colors
+        ///
+        public struct Favorites {
+
+            ///
+            /// Color to be used for Cell background
+            ///
+            public static let favoriteCellBackgroundColor = color("FavoriteCellBackground")
+        }
 
     }
 

@@ -26,6 +26,24 @@ import UIKit
 public extension UIView {
 
     ///
+    /// Shows an Empty State view with the given message.
+    /// - Parameter message: The message to be displayed inside the view
+    ///
+    func showEmptyStateView(message: String) {
+        let view = EmptyStateView()
+        view.setup(with: message)
+        self.addSubview(view)
+        self.bringSubviewToFront(view)
+    }
+
+    ///
+    /// Hides the error message, if presented
+    ///
+    func hideEmptyStateView() {
+        self.viewWithTag(EmptyStateView.emptyStateViewTag)?.removeFromSuperview()
+    }
+
+    ///
     /// Shows an error view
     /// - Parameter message: The message to be displayed inside the view
     ///

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyStateView" customModule="Common" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="SUi-Jh-dra"/>
+                <outlet property="messageLabel" destination="bXc-nB-2HP" id="xFl-5P-XVX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqU-Zb-N73" userLabel="Container">
+                    <rect key="frame" x="163.5" y="321.5" width="48" height="24"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXc-nB-2HP">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bXc-nB-2HP" firstAttribute="leading" secondItem="BqU-Zb-N73" secondAttribute="leading" id="Izx-kd-yFO"/>
+                        <constraint firstItem="bXc-nB-2HP" firstAttribute="top" secondItem="oNB-z7-V9u" secondAttribute="top" id="LFq-J0-1LV"/>
+                        <constraint firstAttribute="trailing" secondItem="bXc-nB-2HP" secondAttribute="trailing" id="mPv-1c-4y2"/>
+                        <constraint firstAttribute="bottom" secondItem="bXc-nB-2HP" secondAttribute="bottom" id="rN8-1H-YQb"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="oNB-z7-V9u"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BqU-Zb-N73" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Lkh-sW-gVu"/>
+                <constraint firstItem="BqU-Zb-N73" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SaQ-LB-Lxn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BqU-Zb-N73" secondAttribute="trailing" constant="32" id="emS-Jr-B86"/>
+                <constraint firstItem="BqU-Zb-N73" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="fWo-v3-bmC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
