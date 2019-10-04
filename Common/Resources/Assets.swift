@@ -91,7 +91,7 @@ public struct Assets {
             ///
             public static let iconColor = color("NavigationBarIconColor")
         }
-        
+
         ///
         /// NavigationBar colors
         ///

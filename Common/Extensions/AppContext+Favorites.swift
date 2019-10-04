@@ -28,7 +28,7 @@ import Ness
 /// Adds capabilities to AppContext
 ///
 public extension AppContext {
-    
+
     ///
     /// Adds the given movie to the list of favorite movies
     ///
@@ -39,7 +39,7 @@ public extension AppContext {
         favoriteMovies.append(favorite)
         set(value: favoriteMovies, for: FavoriteMoviesKey)
     }
-    
+
     ///
     /// Adds the given movie to the list of favorite movies
     ///
@@ -50,7 +50,7 @@ public extension AppContext {
         favoriteMovies.append(contentsOf: favorites)
         set(value: favoriteMovies, for: FavoriteMoviesKey)
     }
-    
+
     ///
     /// Returns if the given `movie id` is already a favorite.
     ///
@@ -62,7 +62,7 @@ public extension AppContext {
         let favoriteIds = favoriteMovies.compactMap({ return $0.id })
         return favoriteIds.contains(movieId)
     }
-    
+
     ///
     /// Removies the given movie from the favorite movie list.
     ///
@@ -74,7 +74,7 @@ public extension AppContext {
         favoriteMovies = favoriteMovies.filter({ return $0.id != movieId })
         set(value: favoriteMovies, for: FavoriteMoviesKey)
     }
-    
+
     ///
     /// Returns all favorite movies.
     ///
@@ -84,5 +84,5 @@ public extension AppContext {
         guard let favoriteMovies: FavoriteMoviesType = get(key: FavoriteMoviesKey) else { return [] }
         return favoriteMovies
     }
-    
+
 }

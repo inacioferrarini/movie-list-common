@@ -24,7 +24,7 @@
 import Foundation
 
 extension GenreListResult {
-    
+
     ///
     /// Returns the names, if found for the given ids
     /// - Parameter ids: Ids to recover the names
@@ -33,5 +33,5 @@ extension GenreListResult {
         guard let genres = genres else { return [] }
         return genres.filter({ return ids.contains($0.id ?? -1) }).compactMap({ return $0.name })
     }
-    
+
 }
