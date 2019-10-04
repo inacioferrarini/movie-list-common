@@ -30,10 +30,14 @@ public extension UIView {
     /// - Parameter message: The message to be displayed inside the view
     ///
     func showEmptyStateView(message: String) {
-        let view = EmptyStateView()
-        view.setup(with: message)
-        self.addSubview(view)
-        self.bringSubviewToFront(view)
+        var view = self.viewWithTag(EmptyStateView.emptyStateViewTag) as? EmptyStateView
+        if view == nil {
+            let newView = EmptyStateView()
+            self.addSubview(newView)
+            self.bringSubviewToFront(newView)
+            view = newView
+        }
+        view?.setup(with: message)
     }
 
     ///
@@ -48,10 +52,14 @@ public extension UIView {
     /// - Parameter message: The message to be displayed inside the view
     ///
     func showErrorView(message: String) {
-        let view = ErrorView()
-        view.setup(with: message)
-        self.addSubview(view)
-        self.bringSubviewToFront(view)
+        var view = self.viewWithTag(ErrorView.errorViewTag) as? ErrorView
+        if view == nil {
+            let newView = ErrorView()
+            self.addSubview(newView)
+            self.bringSubviewToFront(newView)
+            view = newView
+        }
+        view?.setup(with: message)
     }
 
     ///
@@ -65,9 +73,13 @@ public extension UIView {
     /// Shows a loading view
     ///
     func showLoadingView() {
-        let view = LoadingView()
-        self.addSubview(view)
-        self.bringSubviewToFront(view)
+        var view = self.viewWithTag(LoadingView.loadingViewTag) as? LoadingView
+        if view == nil {
+            let newView = LoadingView()
+            self.addSubview(newView)
+            self.bringSubviewToFront(newView)
+            view = newView
+        }
     }
 
     ///
@@ -82,10 +94,14 @@ public extension UIView {
     /// - Parameter message: The message to be displayed inside the view
     ///
     func showNotFoundView(message: String) {
-        let view = NotFoundView()
-        view.setup(with: message)
-        self.addSubview(view)
-        self.bringSubviewToFront(view)
+        var view = self.viewWithTag(NotFoundView.notFoundViewTag) as? NotFoundView
+        if view == nil {
+            let newView = NotFoundView()
+            self.addSubview(newView)
+            self.bringSubviewToFront(newView)
+            view = newView
+        }
+        view?.setup(with: message)
     }
 
     ///
