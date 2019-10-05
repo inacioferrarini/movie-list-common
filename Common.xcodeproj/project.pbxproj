@@ -49,6 +49,7 @@
 		BB58BF91232E8C3D00A13142 /* ImageTintColor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF90232E8C3D00A13142 /* ImageTintColor.png */; };
 		BB58BF95232E907B00A13142 /* ImageTintColorRed.png in Resources */ = {isa = PBXBuildFile; fileRef = BB58BF94232E907A00A13142 /* ImageTintColorRed.png */; };
 		BB58BFC9232EAB0E00A13142 /* AssetsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */; };
+		BB6045A22348D39B0047FA41 /* UIView+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6045A12348D39B0047FA41 /* UIView+Round.swift */; };
 		BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* CommonAssets.xcassets */; };
 		BB61920323243B01007E4C48 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920223243B01007E4C48 /* Assets.swift */; };
 		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
@@ -131,6 +132,7 @@
 		BB58BF90232E8C3D00A13142 /* ImageTintColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColor.png; sourceTree = "<group>"; };
 		BB58BF94232E907A00A13142 /* ImageTintColorRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageTintColorRed.png; sourceTree = "<group>"; };
 		BB58BFC8232EAB0E00A13142 /* AssetsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsSpec.swift; sourceTree = "<group>"; };
+		BB6045A12348D39B0047FA41 /* UIView+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Round.swift"; sourceTree = "<group>"; };
 		BB61920023243AFC007E4C48 /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
 		BB61920223243B01007E4C48 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		BB61920623244503007E4C48 /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */,
 				BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */,
 				BB46E0812335DFE200F02CE5 /* UIImage+Download.swift */,
+				BB6045A12348D39B0047FA41 /* UIView+Round.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				BB4EA9462341839000B60696 /* MovieSearchResult+Operator.swift in Sources */,
 				36EDF12F234510370006100E /* GenreListResult+Names.swift in Sources */,
 				BBEBC53C2340E5750020CC25 /* MoviesApi.swift in Sources */,
+				BB6045A22348D39B0047FA41 /* UIView+Round.swift in Sources */,
 				BBEBC53E2340E5B70020CC25 /* GenresApi.swift in Sources */,
 				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,
 				BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */,
