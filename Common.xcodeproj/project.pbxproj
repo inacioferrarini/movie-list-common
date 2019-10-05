@@ -23,6 +23,7 @@
 		36EDF13B234516D60006100E /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36EDF139234516C90006100E /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */; };
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
+		BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */; };
 		BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */; };
 		BB1F18C52346E3BD00A70294 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
@@ -108,6 +109,7 @@
 		36EDF139234516C90006100E /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSymbols.swift; sourceTree = "<group>"; };
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
+		BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+DisclosureIndicatorColor.swift"; sourceTree = "<group>"; };
 		BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 				BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */,
 				BB46E0812335DFE200F02CE5 /* UIImage+Download.swift */,
 				BB6045A12348D39B0047FA41 /* UIView+Round.swift */,
+				BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */,
 				365FC3052343E6830004959E /* AppContext+Favorites.swift in Sources */,
+				BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
 				BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */,
