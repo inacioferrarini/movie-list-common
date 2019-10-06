@@ -32,3 +32,13 @@ public let FavoriteMoviesKey = "favoriteMovies"
 /// Type for FavoriteMovies
 ///
 public typealias FavoriteMoviesType = [Movie]
+
+///
+/// Key for GenreListSearch
+///
+public let GenreListSearchResultKey = "genreListSearchResult"
+
+///
+/// Type for GenreListSearch
+///
+public typealias GenreListSearchResultType = GenreListResult
