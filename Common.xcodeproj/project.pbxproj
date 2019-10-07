@@ -24,6 +24,7 @@
 		BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */; };
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
 		BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */; };
+		BB1E6981234BFD1B006802E7 /* AppContext+ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1E6980234BFD1B006802E7 /* AppContext+ApiKey.swift */; };
 		BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */; };
 		BB1F18C52346E3BD00A70294 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
@@ -110,6 +111,7 @@
 		BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSymbols.swift; sourceTree = "<group>"; };
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
 		BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+DisclosureIndicatorColor.swift"; sourceTree = "<group>"; };
+		BB1E6980234BFD1B006802E7 /* AppContext+ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+ApiKey.swift"; sourceTree = "<group>"; };
 		BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				BB619205232444EF007E4C48 /* UIKit */,
+				BB1E6980234BFD1B006802E7 /* AppContext+ApiKey.swift */,
 				365FC3042343E6830004959E /* AppContext+Favorites.swift */,
 				BB46E07A2335C25400F02CE5 /* String+Date.swift */,
 				BB46E07C2335C47800F02CE5 /* Date+Components.swift */,
@@ -569,6 +572,7 @@
 				BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */,
 				BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */,
 				BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */,
+				BB1E6981234BFD1B006802E7 /* AppContext+ApiKey.swift in Sources */,
 				BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */,
 				BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */,
 				BBEBC5462340E97F0020CC25 /* MovieSearchResult.swift in Sources */,
