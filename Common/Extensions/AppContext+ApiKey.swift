@@ -24,7 +24,7 @@
 import Foundation
 import Ness
 
-private let TheMovieDBApiKeyKey = "favoriteMovies"
+private let TheMovieDBApiKeyKey = "theMovieDBApiKey"
 private typealias TheMovieDBApiKeyType = String
 
 ///
