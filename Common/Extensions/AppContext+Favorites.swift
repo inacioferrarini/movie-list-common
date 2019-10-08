@@ -26,16 +26,6 @@ import Ness
 
 private let FavoriteMoviesKey = "favoriteMovies"
 
-/////
-///// Key for FavoriteMovies
-/////
-//public let FavoriteMoviesKey = "favoriteMovies"
-//
-/////
-///// Type for FavoriteMovies
-/////
-//public typealias FavoriteMoviesType = [Movie]
-
 ///
 /// Adds capabilities to AppContext
 ///
