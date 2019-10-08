@@ -21,7 +21,6 @@
 		36EDF136234513AB0006100E /* GenresApiSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF135234513AB0006100E /* GenresApiSpec.swift */; };
 		36EDF13A234516C90006100E /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EDF139234516C90006100E /* OHHTTPStubs.framework */; };
 		36EDF13B234516D60006100E /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36EDF139234516C90006100E /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */; };
 		BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */; };
 		BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */; };
 		BB1E6981234BFD1B006802E7 /* AppContext+ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1E6980234BFD1B006802E7 /* AppContext+ApiKey.swift */; };
@@ -68,6 +67,7 @@
 		BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5412340E97F0020CC25 /* Genre.swift */; };
 		BBEBC5462340E97F0020CC25 /* MovieSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5422340E97F0020CC25 /* MovieSearchResult.swift */; };
 		BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBC5432340E97F0020CC25 /* GenreListResult.swift */; };
+		BBEEA0C0234D3AE500FA9A1B /* AppContext+Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEEA0BF234D3AE500FA9A1B /* AppContext+Genre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +110,6 @@
 		36EDF133234513810006100E /* MoviesApiSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApiSpec.swift; sourceTree = "<group>"; };
 		36EDF135234513AB0006100E /* GenresApiSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresApiSpec.swift; sourceTree = "<group>"; };
 		36EDF139234516C90006100E /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
-		BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSymbols.swift; sourceTree = "<group>"; };
 		BB19D9B823308941004DECD6 /* UISearchBar+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utils.swift"; sourceTree = "<group>"; };
 		BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+DisclosureIndicatorColor.swift"; sourceTree = "<group>"; };
 		BB1E6980234BFD1B006802E7 /* AppContext+ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+ApiKey.swift"; sourceTree = "<group>"; };
@@ -157,6 +156,7 @@
 		BBEBC5412340E97F0020CC25 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		BBEBC5422340E97F0020CC25 /* MovieSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSearchResult.swift; sourceTree = "<group>"; };
 		BBEBC5432340E97F0020CC25 /* GenreListResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreListResult.swift; sourceTree = "<group>"; };
+		BBEEA0BF234D3AE500FA9A1B /* AppContext+Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+Genre.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +339,7 @@
 				BB619205232444EF007E4C48 /* UIKit */,
 				BB1E6980234BFD1B006802E7 /* AppContext+ApiKey.swift */,
 				365FC3042343E6830004959E /* AppContext+Favorites.swift */,
+				BBEEA0BF234D3AE500FA9A1B /* AppContext+Genre.swift */,
 				BB1E6982234C1865006802E7 /* AppContext+Language.swift */,
 				BB46E07A2335C25400F02CE5 /* String+Date.swift */,
 				BB46E07C2335C47800F02CE5 /* Date+Components.swift */,
@@ -381,7 +382,6 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				BB082CF82342CE0E00DCE7E1 /* CommonSymbols.swift */,
 				BB46E07E2335DC6B00F02CE5 /* Cache */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB1E6984234C1963006802E7 /* Internationalization */,
@@ -578,7 +578,6 @@
 			files = (
 				BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
-				BB082CF92342CE0E00DCE7E1 /* CommonSymbols.swift in Sources */,
 				365FC3052343E6830004959E /* AppContext+Favorites.swift in Sources */,
 				BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */,
 				BB1E6983234C1865006802E7 /* AppContext+Language.swift in Sources */,
@@ -588,6 +587,7 @@
 				BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */,
 				BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */,
 				BB1E6981234BFD1B006802E7 /* AppContext+ApiKey.swift in Sources */,
+				BBEEA0C0234D3AE500FA9A1B /* AppContext+Genre.swift in Sources */,
 				BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */,
 				BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */,
 				BBEBC5462340E97F0020CC25 /* MovieSearchResult.swift in Sources */,

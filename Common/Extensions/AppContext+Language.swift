@@ -27,7 +27,7 @@ import Ness
 private let AppLanguageKey = "theMovieDBApiKey"
 
 ///
-/// Adds Language capabilities to AppContext
+/// Adds Language manipulation capabilities to AppContext
 ///
 public extension AppContext {
 

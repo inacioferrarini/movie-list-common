@@ -27,7 +27,7 @@ import Ness
 private let FavoriteMoviesKey = "favoriteMovies"
 
 ///
-/// Adds capabilities to AppContext
+/// Adds Favorites management capabilities to AppContext
 ///
 public extension AppContext {
 
@@ -91,7 +91,7 @@ public extension AppContext {
     func isFavorite(movieId: Int) -> Bool {
         return favoriteIds.contains(movieId)
     }
-    
+
     ///
     /// Removes the given movie from the favorite movie list.
     ///

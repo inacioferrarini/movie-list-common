@@ -22,13 +22,32 @@
 //
 
 import Foundation
+import Ness
+
+/////
+///// Key for GenreListSearch
+/////
+//public let GenreListSearchResultKey = "genreListSearchResult"
+//
+/////
+///// Type for GenreListSearch
+/////
+//public typealias GenreListSearchResultType = GenreListResult
+
+private let GenreListSearchResultKey = "genreListSearchResult"
 
 ///
-/// Key for GenreListSearch
+/// Adds Movie Genre manipulation capabilities to AppContext
 ///
-public let GenreListSearchResultKey = "genreListSearchResult"
+public extension AppContext {
 
-///
-/// Type for GenreListSearch
-///
-public typealias GenreListSearchResultType = GenreListResult
+    public var genreList: GenreListResult? {
+        get {
+            return get(key: GenreListSearchResultKey)
+        }
+        set (newGenreList) {
+            set(value: newGenreList as Any, for: GenreListSearchResultKey)
+        }
+    }
+
+}
