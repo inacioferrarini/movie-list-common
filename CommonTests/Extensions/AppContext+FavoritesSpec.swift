@@ -27,7 +27,7 @@ import Ness
 @testable import Common
 
 class AppContextFavoritesSpec: QuickSpec {
-
+    
     override func spec() {
         
         describe("Extension methods") {
@@ -39,19 +39,29 @@ class AppContextFavoritesSpec: QuickSpec {
             }
             
             it("add(favorite: ) must add Movie to list") {
-                expect(sut?.allFavorites().count).to(equal(0))
-                let movie = Movie()
+                expect(sut?.favorites.count).to(equal(0))
+                var movie = Movie()
+                movie.id = 10
                 sut?.add(favorite: movie)
-                expect(sut?.allFavorites().count).to(equal(1))
+                expect(sut?.favorites.count).to(equal(1))
             }
             
             it("add(favorites: ) must add [Movies] to list ") {
-                expect(sut?.allFavorites().count).to(equal(0))
-                let movies = [Movie(), Movie(), Movie()]
+                expect(sut?.favorites.count).to(equal(0))
+                var movie1 = Movie()
+                movie1.id = 10
+                
+                var movie2 = Movie()
+                movie2.id = 20
+                
+                var movie3 = Movie()
+                movie3.id = 30
+                
+                let movies = [movie1, movie2, movie3]
                 sut?.add(favorites: movies)
-                expect(sut?.allFavorites().count).to(equal(3))
+                expect(sut?.favorites.count).to(equal(3))
             }
-
+            
             context("isFavorite method") {
                 
                 beforeEach {
@@ -67,15 +77,15 @@ class AppContextFavoritesSpec: QuickSpec {
                 }
                 
                 it("must return true if the given movieId is contained in the favorite movies list") {
-                    expect(sut?.allFavorites().count).to(equal(2))
+                    expect(sut?.favorites.count).to(equal(2))
                     expect(sut?.isFavorite(movieId: 200)).to(beTruthy())
                 }
                 
                 it("must return false if the given movieId is not contained in the favorite movies list") {
-                    expect(sut?.allFavorites().count).to(equal(2))
+                    expect(sut?.favorites.count).to(equal(2))
                     expect(sut?.isFavorite(movieId: 300)).to(beFalsy())
                 }
-
+                
             }
             
             context("remove method") {
@@ -93,25 +103,25 @@ class AppContextFavoritesSpec: QuickSpec {
                 }
                 
                 it("must remove if a movie with given id is found") {
-                    expect(sut?.allFavorites().count).to(equal(2))
+                    expect(sut?.favorites.count).to(equal(2))
                     var movie = Movie()
                     movie.id = 200
                     sut?.remove(favorite: movie)
-                    expect(sut?.allFavorites().count).to(equal(1))
+                    expect(sut?.favorites.count).to(equal(1))
                 }
                 
                 it("must do nothing if a movie with given id is not found") {
-                    expect(sut?.allFavorites().count).to(equal(2))
+                    expect(sut?.favorites.count).to(equal(2))
                     var movie = Movie()
                     movie.id = 300
                     sut?.remove(favorite: movie)
-                    expect(sut?.allFavorites().count).to(equal(2))
+                    expect(sut?.favorites.count).to(equal(2))
                 }
-
+                
             }
             
         }
-
+        
     }
-
+    
 }

@@ -24,10 +24,41 @@
 import Foundation
 import Ness
 
+private let FavoriteMoviesKey = "favoriteMovies"
+
+/////
+///// Key for FavoriteMovies
+/////
+//public let FavoriteMoviesKey = "favoriteMovies"
+//
+/////
+///// Type for FavoriteMovies
+/////
+//public typealias FavoriteMoviesType = [Movie]
+
 ///
 /// Adds capabilities to AppContext
 ///
 public extension AppContext {
+
+    ///
+    /// Returns all favorites.
+    /// This property is read only.
+    ///
+    /// To add a new favorite, check `add` methods.
+    ///
+    public var favorites: [Movie] {
+        return get(key: FavoriteMoviesKey) ?? []
+    }
+
+    ///
+    /// Returns the Ids from all favorites.
+    /// This property is compounded from current favorites at the
+    /// calculation execution moment.
+    ///
+    public var favoriteIds: [Int] {
+        return favorites.compactMap({ return $0.id })
+    }
 
     ///
     /// Adds the given movie to the list of favorite movies
@@ -35,9 +66,11 @@ public extension AppContext {
     /// - Parameter favorite: The movie to be added to the favorite list.
     ///
     func add(favorite: Movie) {
-        var favoriteMovies = allFavorites()
-        favoriteMovies.append(favorite)
-        set(value: favoriteMovies, for: FavoriteMoviesKey)
+        guard let movieId = favorite.id else { return }
+        guard isFavorite(movieId: movieId) == false else { return }
+        var updatedFavorites = favorites
+        updatedFavorites.append(favorite)
+        set(value: updatedFavorites, for: FavoriteMoviesKey)
     }
 
     ///
@@ -46,9 +79,17 @@ public extension AppContext {
     /// - Parameter favorites: The movies to be added to the favorite list.
     ///
     func add(favorites: [Movie]) {
-        var favoriteMovies = allFavorites()
-        favoriteMovies.append(contentsOf: favorites)
-        set(value: favoriteMovies, for: FavoriteMoviesKey)
+        favorites.forEach({ add(favorite: $0) })
+    }
+
+    ///
+    /// Returns a favorite with given movie Id, if found. Returns `nil` otherwise.
+    ///
+    /// - Parameter id: Movie identifier.
+    /// - Returns: A favorite movie with given Id, if found.
+    ///
+    func favorite(id: Int) -> Movie? {
+        return favorites.filter({ return $0.id == id }).first
     }
 
     ///
@@ -58,31 +99,18 @@ public extension AppContext {
     /// - Returns: If the movie is a favorite or not.
     ///
     func isFavorite(movieId: Int) -> Bool {
-        let favoriteMovies = allFavorites()
-        let favoriteIds = favoriteMovies.compactMap({ return $0.id })
         return favoriteIds.contains(movieId)
     }
-
+    
     ///
-    /// Removies the given movie from the favorite movie list.
+    /// Removes the given movie from the favorite movie list.
     ///
     /// - Parameter favorite: The movie to be removed from favorite list.
     ///
     func remove(favorite: Movie) {
         guard let movieId = favorite.id else { return }
-        var favoriteMovies = allFavorites()
-        favoriteMovies = favoriteMovies.filter({ return $0.id != movieId })
+        let favoriteMovies = favorites.filter({ return $0.id != movieId })
         set(value: favoriteMovies, for: FavoriteMoviesKey)
-    }
-
-    ///
-    /// Returns all favorite movies.
-    ///
-    /// - Returns: Favorite movies list
-    ///
-    func allFavorites() -> FavoriteMoviesType {
-        guard let favoriteMovies: FavoriteMoviesType = get(key: FavoriteMoviesKey) else { return [] }
-        return favoriteMovies
     }
 
 }
