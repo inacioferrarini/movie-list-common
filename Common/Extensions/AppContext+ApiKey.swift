@@ -38,7 +38,7 @@ public extension AppContext {
     ///
     public var theMovieDbApiKey: String {
         get {
-            return get(key: "favoriteMovies") ?? ""
+            return get(key: TheMovieDBApiKeyKey) ?? ""
         }
         set (apiKey) {
             set(value: apiKey, for: TheMovieDBApiKeyKey)
