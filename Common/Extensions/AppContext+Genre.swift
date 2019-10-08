@@ -24,16 +24,6 @@
 import Foundation
 import Ness
 
-/////
-///// Key for GenreListSearch
-/////
-//public let GenreListSearchResultKey = "genreListSearchResult"
-//
-/////
-///// Type for GenreListSearch
-/////
-//public typealias GenreListSearchResultType = GenreListResult
-
 private let GenreListSearchResultKey = "genreListSearchResult"
 
 ///
