@@ -24,23 +24,19 @@
 import Foundation
 import Ness
 
-private let TheMovieDBApiKeyKey = "theMovieDBApiKey"
+private let AppLanguageKey = "theMovieDBApiKey"
 
 ///
-/// Adds API Token capabilities to AppContext
+/// Adds Language capabilities to AppContext
 ///
 public extension AppContext {
 
-    ///
-    /// Provides an Easy way to store and retrieve the `The Movie DB` Api Token used
-    /// by the app.
-    ///
-    public var theMovieDbApiKey: String {
+    public var appLanguage: Language {
         get {
-            return get(key: TheMovieDBApiKeyKey) ?? ""
+            return get(key: AppLanguageKey) ?? Language.englishUSA
         }
-        set (apiKey) {
-            set(value: apiKey, for: TheMovieDBApiKeyKey)
+        set (language) {
+            set(value: language, for: AppLanguageKey)
         }
     }
 
