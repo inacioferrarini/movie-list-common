@@ -24,7 +24,7 @@
 import Foundation
 import Ness
 
-private let AppLanguageKey = "theMovieDBApiKey"
+private let AppLanguageKey = "appLanguage"
 
 ///
 /// Adds Language manipulation capabilities to AppContext
