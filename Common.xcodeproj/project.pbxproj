@@ -28,6 +28,9 @@
 		BB1E6986234C1989006802E7 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1E6985234C1989006802E7 /* Language.swift */; };
 		BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */; };
 		BB1F18C52346E3BD00A70294 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */; };
+		BB3435E8234EA2ED00853DE3 /* LanguageAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3435E7234EA2ED00853DE3 /* LanguageAware.swift */; };
+		BB3435ED234EAAA500853DE3 /* AppContextAware+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3435EC234EAAA500853DE3 /* AppContextAware+Coordinator.swift */; };
+		BB3435EF234EAB8C00853DE3 /* AppContextAware+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3435EE234EAB8C00853DE3 /* AppContextAware+UIViewController.swift */; };
 		BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07A2335C25400F02CE5 /* String+Date.swift */; };
 		BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07C2335C47800F02CE5 /* Date+Components.swift */; };
 		BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E07F2335DCB000F02CE5 /* ImageCache.swift */; };
@@ -117,6 +120,9 @@
 		BB1E6985234C1989006802E7 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		BB1F18C22346E3AA00A70294 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		BB1F18C42346E3BD00A70294 /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
+		BB3435E7234EA2ED00853DE3 /* LanguageAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAware.swift; sourceTree = "<group>"; };
+		BB3435EC234EAAA500853DE3 /* AppContextAware+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContextAware+Coordinator.swift"; sourceTree = "<group>"; };
+		BB3435EE234EAB8C00853DE3 /* AppContextAware+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContextAware+UIViewController.swift"; sourceTree = "<group>"; };
 		BB46E07A2335C25400F02CE5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		BB46E07C2335C47800F02CE5 /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
 		BB46E07F2335DCB000F02CE5 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -222,8 +228,18 @@
 			isa = PBXGroup;
 			children = (
 				BB1E6985234C1989006802E7 /* Language.swift */,
+				BB3435E7234EA2ED00853DE3 /* LanguageAware.swift */,
 			);
 			path = Internationalization;
+			sourceTree = "<group>";
+		};
+		BB3435EB234EAA8A00853DE3 /* AppContext */ = {
+			isa = PBXGroup;
+			children = (
+				BB3435EC234EAAA500853DE3 /* AppContextAware+Coordinator.swift */,
+				BB3435EE234EAB8C00853DE3 /* AppContextAware+UIViewController.swift */,
+			);
+			path = AppContext;
 			sourceTree = "<group>";
 		};
 		BB46E07E2335DC6B00F02CE5 /* Cache */ = {
@@ -383,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				BB46E07E2335DC6B00F02CE5 /* Cache */,
+				BB3435EB234EAA8A00853DE3 /* AppContext */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB1E6984234C1963006802E7 /* Internationalization */,
 				BBEBC53F2340E97F0020CC25 /* Models */,
@@ -580,6 +597,7 @@
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				365FC3052343E6830004959E /* AppContext+Favorites.swift in Sources */,
 				BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */,
+				BB3435EF234EAB8C00853DE3 /* AppContextAware+UIViewController.swift in Sources */,
 				BB1E6983234C1865006802E7 /* AppContext+Language.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
@@ -601,7 +619,9 @@
 				36EDF12F234510370006100E /* GenreListResult+Names.swift in Sources */,
 				BBEBC53C2340E5750020CC25 /* MoviesApi.swift in Sources */,
 				BB6045A22348D39B0047FA41 /* UIView+Round.swift in Sources */,
+				BB3435ED234EAAA500853DE3 /* AppContextAware+Coordinator.swift in Sources */,
 				BBEBC53E2340E5B70020CC25 /* GenresApi.swift in Sources */,
+				BB3435E8234EA2ED00853DE3 /* LanguageAware.swift in Sources */,
 				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,
 				BB19D9B923308941004DECD6 /* UISearchBar+Utils.swift in Sources */,
 				BB46E0802335DCB000F02CE5 /* ImageCache.swift in Sources */,

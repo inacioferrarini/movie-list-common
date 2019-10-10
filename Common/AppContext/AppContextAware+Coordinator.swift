@@ -21,23 +21,18 @@
 //    SOFTWARE.
 //
 
-import Foundation
 import Ness
+import Flow
 
-private let AppLanguageKey = "appLanguage"
+public extension AppContextAware where Self: Coordinator {
 
-///
-/// Adds Language manipulation capabilities to AppContext
-///
-public extension AppContext {
-
+    ///
+    /// Calculated Property that extracts the `appLanguage` property
+    /// from the appContext.
+    ///
     public var appLanguage: Language? {
-        get {
-            return get(key: AppLanguageKey)
-        }
-        set (language) {
-            set(value: language as Any, for: AppLanguageKey)
-        }
+        return appContext?.appLanguage
     }
 
 }
+
