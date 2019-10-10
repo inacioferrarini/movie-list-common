@@ -21,23 +21,26 @@
 //    SOFTWARE.
 //
 
-import Foundation
 import Ness
 
-private let AppLanguageKey = "appLanguage"
-
 ///
-/// Adds Language manipulation capabilities to AppContext
+/// Markup protocol that allows any object to have an
+/// AppContext reference.
 ///
-public extension AppContext {
+public protocol LanguageAware {
 
-    public var appLanguage: Language? {
-        get {
-            return get(key: AppLanguageKey)
-        }
-        set (language) {
-            set(value: language as Any, for: AppLanguageKey)
-        }
+    ///
+    /// AppContext reference
+    ///
+    var appLanguage: Language? { get }
+
+}
+
+public extension LanguageAware where Self: Internationalizable {
+
+    func s(_ stringName: String) -> String {
+        guard let languageCode = appLanguage?.rawValue else { return "#undefined appLanguage#" }
+        return string(stringName, languageCode: languageCode)
     }
 
 }
