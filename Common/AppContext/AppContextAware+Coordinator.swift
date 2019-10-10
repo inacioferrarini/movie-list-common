@@ -35,4 +35,3 @@ public extension AppContextAware where Self: Coordinator {
     }
 
 }
-

@@ -33,5 +33,5 @@ public extension AppContextAware where Self: UIViewController {
     public var appLanguage: Language? {
         return appContext?.appLanguage
     }
-    
+
 }
