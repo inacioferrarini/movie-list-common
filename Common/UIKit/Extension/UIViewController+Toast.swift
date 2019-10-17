@@ -56,6 +56,8 @@ public extension UIViewController {
     /// - Parameter message: The message to be displayed
     ///
     func toast(withErrorMessage errorMessage: String) {
+let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
+selectionFeedbackGenerator.selectionChanged()
         SVProgressHUD.showError(withStatus: errorMessage)
     }
 
