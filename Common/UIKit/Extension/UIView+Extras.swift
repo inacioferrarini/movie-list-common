@@ -59,8 +59,8 @@ public extension UIView {
             self.bringSubviewToFront(newView)
             view = newView
         }
-let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
-selectionFeedbackGenerator.selectionChanged()
+        let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
+        selectionFeedbackGenerator.selectionChanged()
         view?.setup(with: message)
     }
 
@@ -103,8 +103,8 @@ selectionFeedbackGenerator.selectionChanged()
             self.bringSubviewToFront(newView)
             view = newView
         }
-let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
-selectionFeedbackGenerator.selectionChanged()
+        let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
+        selectionFeedbackGenerator.selectionChanged()
         view?.setup(with: message)
     }
 
