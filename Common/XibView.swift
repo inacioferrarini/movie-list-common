@@ -34,7 +34,7 @@ open class XibView: UIView {
     @IBOutlet weak private(set) public var contentView: UIView!
 
     // MARK: - Initialization
-    
+
     ///
     /// Initializes the view with using `UIScreen.main.bounds` as frame.
     ///
@@ -42,7 +42,7 @@ open class XibView: UIView {
         super.init(frame: UIScreen.main.bounds)
         commonInit()
     }
-    
+
     ///
     /// Initializes the view with using the given `frame`.
     /// - Parameter frame: Initial view dimensions.
@@ -51,7 +51,7 @@ open class XibView: UIView {
         super.init(frame: frame)
         commonInit()
     }
-    
+
     ///
     /// Initializes the view with using the given `coder`.
     /// - Parameter aDecoder: NSCoder to be used.
@@ -60,7 +60,7 @@ open class XibView: UIView {
         super.init(coder: aDecoder)
         commonInit()
     }
-    
+
     private func commonInit() {
         let bundle = Bundle(for: type(of: self))
         let className = String(describing: type(of: self))
@@ -70,11 +70,11 @@ open class XibView: UIView {
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         setupView()
     }
-    
+
     ///
     /// Override this method in order to provide aditional view setup.
     /// This method will be called after the initialization.
     ///
     open func setupView() {}
-    
+
 }
