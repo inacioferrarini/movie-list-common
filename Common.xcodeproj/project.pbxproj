@@ -42,6 +42,7 @@
 		BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09923365D5F00F02CE5 /* NotFoundView.swift */; };
 		BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */; };
 		BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46E09D233669B700F02CE5 /* UIView+Extras.swift */; };
+		BB4B481A2357F54B003B00F6 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B48192357F54B003B00F6 /* XibView.swift */; };
 		BB4EA94423417B0800B60696 /* Ness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4EA94323417B0800B60696 /* Ness.framework */; };
 		BB4EA9462341839000B60696 /* MovieSearchResult+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EA9452341839000B60696 /* MovieSearchResult+Operator.swift */; };
 		BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */; };
@@ -134,6 +135,7 @@
 		BB46E09923365D5F00F02CE5 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
 		BB46E09B23365D6F00F02CE5 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
 		BB46E09D233669B700F02CE5 /* UIView+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
+		BB4B48192357F54B003B00F6 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		BB4EA94323417B0800B60696 /* Ness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4EA9452341839000B60696 /* MovieSearchResult+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieSearchResult+Operator.swift"; sourceTree = "<group>"; };
 		BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 		BBD326512323D8D9006E7DBC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BB4B48192357F54B003B00F6 /* XibView.swift */,
 				BB46E07E2335DC6B00F02CE5 /* Cache */,
 				BB3435EB234EAA8A00853DE3 /* AppContext */,
 				BB619204232444E7007E4C48 /* Extensions */,
@@ -610,6 +613,7 @@
 				BBEBC5462340E97F0020CC25 /* MovieSearchResult.swift in Sources */,
 				BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */,
 				BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */,
+				BB4B481A2357F54B003B00F6 /* XibView.swift in Sources */,
 				BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
 				BBEBC53A2340E41F0020CC25 /* APIs.swift in Sources */,
