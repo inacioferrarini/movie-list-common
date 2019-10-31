@@ -21,8 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
-
 public enum Language: String {
     case englishUSA = "en-US"
     case portugueseBrazil = "pt-BR"

@@ -21,7 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
 import Ness
 
 private let GenreListSearchResultKey = "genreListSearchResult"

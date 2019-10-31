@@ -21,7 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
 import Ness
 
 public class MoviesApi: AppBaseApi {

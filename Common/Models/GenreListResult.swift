@@ -21,8 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
-
 public struct GenreListResult: Codable {
 
     public var genres: [Genre]?

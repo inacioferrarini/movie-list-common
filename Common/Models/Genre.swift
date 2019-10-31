@@ -21,8 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
-
 public struct Genre: Codable {
 
     public var id: Int?

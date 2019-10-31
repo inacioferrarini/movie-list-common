@@ -21,8 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
-
 public extension MovieSearchResult {
 
     /// Returns a new `MovieSearchResult` objects from `rhs` and `lhs`.

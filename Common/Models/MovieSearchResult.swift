@@ -21,8 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
-
 public struct MovieSearchResult: Codable {
 
     public var page: Int?

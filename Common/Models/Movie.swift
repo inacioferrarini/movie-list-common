@@ -21,8 +21,6 @@
 //    SOFTWARE.
 //
 
-import Foundation
-
 public struct Movie: Codable, Equatable {
 
     public init() {}
