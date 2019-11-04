@@ -45,8 +45,9 @@
 		BB4B481A2357F54B003B00F6 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B48192357F54B003B00F6 /* XibView.swift */; };
 		BB4EA94423417B0800B60696 /* Ness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4EA94323417B0800B60696 /* Ness.framework */; };
 		BB4EA9462341839000B60696 /* MovieSearchResult+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EA9452341839000B60696 /* MovieSearchResult+Operator.swift */; };
-		BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */; };
-		BB51F51923397BE90054EB57 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB51F51823397BE90054EB57 /* SVProgressHUD.framework */; };
+		BB4F3195236FF1FA001DAB1F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F3192236FF1FA001DAB1F /* MessageView.swift */; };
+		BB4F3196236FF1FA001DAB1F /* UIView+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F3193236FF1FA001DAB1F /* UIView+Message.swift */; };
+		BB4F3197236FF1FA001DAB1F /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4F3194236FF1FA001DAB1F /* MessageView.xib */; };
 		BB58BF4D232E6AD000A13142 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; };
 		BB58BF4E232E6AD000A13142 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; };
 		BB58BF52232E6BBC00A13142 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -60,7 +61,6 @@
 		BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* CommonAssets.xcassets */; };
 		BB61920323243B01007E4C48 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920223243B01007E4C48 /* Assets.swift */; };
 		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
-		BBBC155A233D668E00467BD4 /* SVProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB51F51823397BE90054EB57 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */; };
@@ -92,7 +92,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				36EDF13B234516D60006100E /* OHHTTPStubs.framework in CopyFiles */,
-				BBBC155A233D668E00467BD4 /* SVProgressHUD.framework in CopyFiles */,
 				BB58BF52232E6BBC00A13142 /* Nimble.framework in CopyFiles */,
 				BB58BF53232E6BBC00A13142 /* Quick.framework in CopyFiles */,
 			);
@@ -138,7 +137,9 @@
 		BB4B48192357F54B003B00F6 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		BB4EA94323417B0800B60696 /* Ness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4EA9452341839000B60696 /* MovieSearchResult+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieSearchResult+Operator.swift"; sourceTree = "<group>"; };
-		BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
+		BB4F3192236FF1FA001DAB1F /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		BB4F3193236FF1FA001DAB1F /* UIView+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Message.swift"; sourceTree = "<group>"; };
+		BB4F3194236FF1FA001DAB1F /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
 		BB51F51823397BE90054EB57 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		BB58BF4C232E6AD000A13142 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -173,7 +174,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB4EA94423417B0800B60696 /* Ness.framework in Frameworks */,
-				BB51F51923397BE90054EB57 /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +280,26 @@
 			isa = PBXGroup;
 			children = (
 				BB46E09D233669B700F02CE5 /* UIView+Extras.swift */,
-				BB51F51623397A5F0054EB57 /* UIViewController+Toast.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BB4F3191236FF1CB001DAB1F /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				BB4F3198236FF203001DAB1F /* Extensions */,
+				BB4F3192236FF1FA001DAB1F /* MessageView.swift */,
+				BB4F3194236FF1FA001DAB1F /* MessageView.xib */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		BB4F3198236FF203001DAB1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB4F3193236FF1FA001DAB1F /* UIView+Message.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BB58BF4A232E6AD000A13142 /* Frameworks */ = {
@@ -401,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				BB4B48192357F54B003B00F6 /* XibView.swift */,
+				BB4F3191236FF1CB001DAB1F /* MessageView */,
 				BB46E07E2335DC6B00F02CE5 /* Cache */,
 				BB3435EB234EAA8A00853DE3 /* AppContext */,
 				BB619204232444E7007E4C48 /* Extensions */,
@@ -549,6 +567,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4F3197236FF1FA001DAB1F /* MessageView.xib in Resources */,
 				BB46E09623365D3C00F02CE5 /* LoadingView.xib in Resources */,
 				BB1F18C52346E3BD00A70294 /* EmptyStateView.xib in Resources */,
 				BB46E09C23365D6F00F02CE5 /* NotFoundView.xib in Resources */,
@@ -599,12 +618,12 @@
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
 				365FC3052343E6830004959E /* AppContext+Favorites.swift in Sources */,
 				BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */,
+				BB4F3196236FF1FA001DAB1F /* UIView+Message.swift in Sources */,
 				BB3435EF234EAB8C00853DE3 /* AppContextAware+UIViewController.swift in Sources */,
 				BB1E6983234C1865006802E7 /* AppContext+Language.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
 				BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */,
-				BB51F51723397A5F0054EB57 /* UIViewController+Toast.swift in Sources */,
 				BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */,
 				BB1E6981234BFD1B006802E7 /* AppContext+ApiKey.swift in Sources */,
 				BBEEA0C0234D3AE500FA9A1B /* AppContext+Genre.swift in Sources */,
@@ -614,6 +633,7 @@
 				BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */,
 				BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */,
 				BB4B481A2357F54B003B00F6 /* XibView.swift in Sources */,
+				BB4F3195236FF1FA001DAB1F /* MessageView.swift in Sources */,
 				BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
 				BBEBC53A2340E41F0020CC25 /* APIs.swift in Sources */,
