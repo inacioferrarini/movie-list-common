@@ -152,9 +152,9 @@ public class MessageView: UIView {
         self.clipsToBounds = true
         var color: UIColor?
         if self.kind == .success {
-            color = .green
+            color = UIColor(hex: "#324D0E")
         } else if self.kind == .error {
-            color = .red
+            color = UIColor(hex: "#700F00")
         }
         self.messageLabel.backgroundColor = color
         self.backgroundColor = color
