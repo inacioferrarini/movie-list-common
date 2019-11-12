@@ -61,6 +61,15 @@
 		BB61920123243AFC007E4C48 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB61920023243AFC007E4C48 /* CommonAssets.xcassets */; };
 		BB61920323243B01007E4C48 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920223243B01007E4C48 /* Assets.swift */; };
 		BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61920623244503007E4C48 /* UIColor+Util.swift */; };
+		BB8594A4237A457400DAB3FC /* AppThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594A3237A457400DAB3FC /* AppThemeProtocol.swift */; };
+		BB8594A7237A460900DAB3FC /* TabBarThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594A6237A460900DAB3FC /* TabBarThemeProtocol.swift */; };
+		BB8594A9237A485500DAB3FC /* NavigationBarThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594A8237A485500DAB3FC /* NavigationBarThemeProtocol.swift */; };
+		BB8594AB237A4BDD00DAB3FC /* FavoritesThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594AA237A4BDD00DAB3FC /* FavoritesThemeProtocol.swift */; };
+		BB8594B0237A4DB300DAB3FC /* DefaultFavoritesTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594AF237A4DB300DAB3FC /* DefaultFavoritesTheme.swift */; };
+		BB8594B2237A4EC700DAB3FC /* DefaultNavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594B1237A4EC700DAB3FC /* DefaultNavigationBarTheme.swift */; };
+		BB8594B4237A4F8F00DAB3FC /* DefaultTabBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594B3237A4F8F00DAB3FC /* DefaultTabBarTheme.swift */; };
+		BB8594B6237A519600DAB3FC /* DefaultAppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594B5237A519600DAB3FC /* DefaultAppTheme.swift */; };
+		BB8594B8237A54D600DAB3FC /* AppContext+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8594B7237A54D600DAB3FC /* AppContext+Theme.swift */; };
 		BBD326592323D8D9006E7DBC /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3264F2323D8D9006E7DBC /* Common.framework */; };
 		BBD326602323D8DA006E7DBC /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD326522323D8D9006E7DBC /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE2E32D232B1DCA008D811D /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE2E32C232B1DCA008D811D /* UIImage+Tint.swift */; };
@@ -152,6 +161,15 @@
 		BB61920023243AFC007E4C48 /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
 		BB61920223243B01007E4C48 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		BB61920623244503007E4C48 /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
+		BB8594A3237A457400DAB3FC /* AppThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeProtocol.swift; sourceTree = "<group>"; };
+		BB8594A6237A460900DAB3FC /* TabBarThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarThemeProtocol.swift; sourceTree = "<group>"; };
+		BB8594A8237A485500DAB3FC /* NavigationBarThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarThemeProtocol.swift; sourceTree = "<group>"; };
+		BB8594AA237A4BDD00DAB3FC /* FavoritesThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesThemeProtocol.swift; sourceTree = "<group>"; };
+		BB8594AF237A4DB300DAB3FC /* DefaultFavoritesTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFavoritesTheme.swift; sourceTree = "<group>"; };
+		BB8594B1237A4EC700DAB3FC /* DefaultNavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBarTheme.swift; sourceTree = "<group>"; };
+		BB8594B3237A4F8F00DAB3FC /* DefaultTabBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTabBarTheme.swift; sourceTree = "<group>"; };
+		BB8594B5237A519600DAB3FC /* DefaultAppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppTheme.swift; sourceTree = "<group>"; };
+		BB8594B7237A54D600DAB3FC /* AppContext+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContext+Theme.swift"; sourceTree = "<group>"; };
 		BBD3264F2323D8D9006E7DBC /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD326522323D8D9006E7DBC /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		BBD326532323D8D9006E7DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -376,6 +394,7 @@
 				365FC3042343E6830004959E /* AppContext+Favorites.swift */,
 				BBEEA0BF234D3AE500FA9A1B /* AppContext+Genre.swift */,
 				BB1E6982234C1865006802E7 /* AppContext+Language.swift */,
+				BB8594B7237A54D600DAB3FC /* AppContext+Theme.swift */,
 				BB46E07A2335C25400F02CE5 /* String+Date.swift */,
 				BB46E07C2335C47800F02CE5 /* Date+Components.swift */,
 			);
@@ -393,6 +412,53 @@
 				BB1D1F5F234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BB8594A2237A456000DAB3FC /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BB8594A5237A45F100DAB3FC /* Protocol */,
+				BB8594AE237A4D8C00DAB3FC /* Themes */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		BB8594A5237A45F100DAB3FC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BB8594A3237A457400DAB3FC /* AppThemeProtocol.swift */,
+				BB8594AA237A4BDD00DAB3FC /* FavoritesThemeProtocol.swift */,
+				BB8594A8237A485500DAB3FC /* NavigationBarThemeProtocol.swift */,
+				BB8594A6237A460900DAB3FC /* TabBarThemeProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BB8594AC237A4D7600DAB3FC /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				BB8594B5237A519600DAB3FC /* DefaultAppTheme.swift */,
+				BB8594AF237A4DB300DAB3FC /* DefaultFavoritesTheme.swift */,
+				BB8594B1237A4EC700DAB3FC /* DefaultNavigationBarTheme.swift */,
+				BB8594B3237A4F8F00DAB3FC /* DefaultTabBarTheme.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		BB8594AD237A4D7B00DAB3FC /* Dark */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dark;
+			sourceTree = "<group>";
+		};
+		BB8594AE237A4D8C00DAB3FC /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				BB8594AD237A4D7B00DAB3FC /* Dark */,
+				BB8594AC237A4D7600DAB3FC /* Default */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 		BBD326452323D8D9006E7DBC = {
@@ -418,14 +484,15 @@
 			isa = PBXGroup;
 			children = (
 				BB4B48192357F54B003B00F6 /* XibView.swift */,
-				BB4F3191236FF1CB001DAB1F /* MessageView */,
-				BB46E07E2335DC6B00F02CE5 /* Cache */,
 				BB3435EB234EAA8A00853DE3 /* AppContext */,
+				BB46E07E2335DC6B00F02CE5 /* Cache */,
 				BB619204232444E7007E4C48 /* Extensions */,
 				BB1E6984234C1963006802E7 /* Internationalization */,
+				BB4F3191236FF1CB001DAB1F /* MessageView */,
 				BBEBC53F2340E97F0020CC25 /* Models */,
 				BBEBC5382340E4030020CC25 /* Networking */,
 				BB6191FF23243AE3007E4C48 /* Resources */,
+				BB8594A2237A456000DAB3FC /* Theme */,
 				BB46E08923365BFB00F02CE5 /* UIKit */,
 				BBD326522323D8D9006E7DBC /* Common.h */,
 				BBD326532323D8D9006E7DBC /* Info.plist */,
@@ -616,13 +683,16 @@
 			files = (
 				BB46E09E233669B700F02CE5 /* UIView+Extras.swift in Sources */,
 				BB61920723244503007E4C48 /* UIColor+Util.swift in Sources */,
+				BB8594B6237A519600DAB3FC /* DefaultAppTheme.swift in Sources */,
 				365FC3052343E6830004959E /* AppContext+Favorites.swift in Sources */,
 				BB1D1F60234943BA00F62E44 /* UITableViewCell+DisclosureIndicatorColor.swift in Sources */,
+				BB8594B8237A54D600DAB3FC /* AppContext+Theme.swift in Sources */,
 				BB4F3196236FF1FA001DAB1F /* UIView+Message.swift in Sources */,
 				BB3435EF234EAB8C00853DE3 /* AppContextAware+UIViewController.swift in Sources */,
 				BB1E6983234C1865006802E7 /* AppContext+Language.swift in Sources */,
 				BB46E09A23365D5F00F02CE5 /* NotFoundView.swift in Sources */,
 				BB61920323243B01007E4C48 /* Assets.swift in Sources */,
+				BB8594B2237A4EC700DAB3FC /* DefaultNavigationBarTheme.swift in Sources */,
 				BBEBC5472340E97F0020CC25 /* GenreListResult.swift in Sources */,
 				BB46E09823365D4A00F02CE5 /* LoadingView.swift in Sources */,
 				BB1E6981234BFD1B006802E7 /* AppContext+ApiKey.swift in Sources */,
@@ -631,18 +701,24 @@
 				BB46E07D2335C47800F02CE5 /* Date+Components.swift in Sources */,
 				BBEBC5462340E97F0020CC25 /* MovieSearchResult.swift in Sources */,
 				BB1F18C32346E3AA00A70294 /* EmptyStateView.swift in Sources */,
+				BB8594B0237A4DB300DAB3FC /* DefaultFavoritesTheme.swift in Sources */,
 				BB46E09223365C8B00F02CE5 /* ErrorView.swift in Sources */,
 				BB4B481A2357F54B003B00F6 /* XibView.swift in Sources */,
+				BB8594A7237A460900DAB3FC /* TabBarThemeProtocol.swift in Sources */,
 				BB4F3195236FF1FA001DAB1F /* MessageView.swift in Sources */,
 				BBEBC5452340E97F0020CC25 /* Genre.swift in Sources */,
+				BB8594A4237A457400DAB3FC /* AppThemeProtocol.swift in Sources */,
 				BB46E07B2335C25400F02CE5 /* String+Date.swift in Sources */,
 				BBEBC53A2340E41F0020CC25 /* APIs.swift in Sources */,
 				BB4EA9462341839000B60696 /* MovieSearchResult+Operator.swift in Sources */,
 				BB1E6986234C1989006802E7 /* Language.swift in Sources */,
 				36EDF12F234510370006100E /* GenreListResult+Names.swift in Sources */,
 				BBEBC53C2340E5750020CC25 /* MoviesApi.swift in Sources */,
+				BB8594A9237A485500DAB3FC /* NavigationBarThemeProtocol.swift in Sources */,
+				BB8594AB237A4BDD00DAB3FC /* FavoritesThemeProtocol.swift in Sources */,
 				BB6045A22348D39B0047FA41 /* UIView+Round.swift in Sources */,
 				BB3435ED234EAAA500853DE3 /* AppContextAware+Coordinator.swift in Sources */,
+				BB8594B4237A4F8F00DAB3FC /* DefaultTabBarTheme.swift in Sources */,
 				BBEBC53E2340E5B70020CC25 /* GenresApi.swift in Sources */,
 				BB3435E8234EA2ED00853DE3 /* LanguageAware.swift in Sources */,
 				BB46E0822335DFE200F02CE5 /* UIImage+Download.swift in Sources */,
