@@ -32,85 +32,11 @@ private class PrivateAssets {}
 public struct Assets {
 
     ///
-    /// Colors from the asset catalog
-    ///
-    public struct Colors {
-
-        ///
-        /// TabBar colors
-        ///
-        public struct TabBar {
-            ///
-            /// Color to be used for background
-            ///
-            public static let backgroundColor = color("TabBarBackgroundColor")
-
-            ///
-            /// Color to be used for active tab bar item color
-            ///
-            public static let selectedTextColor = color("TabBarSelectedTextColor")
-
-            ///
-            /// Color to be used for default tab bar item color
-            ///
-            public static let unselectedTextColor = color("TabBarUnselectedTextColor")
-
-            ///
-            /// Color to be used for active tab bar item icon
-            ///
-            public static let selectedIconColor = color("TabBarSelectedIconColor")
-
-            ///
-            /// Color to be used for default tab bar item icon
-            ///
-            public static let unselectedIconColor = color("TabBarUnselectedIconColor")
-        }
-
-        ///
-        /// NavigationBar colors
-        ///
-        public struct NavigationBar {
-
-            ///
-            /// Color to be used for background
-            ///
-            public static let backgroundColor = color("NavigationBarBackgroundColor")
-
-            ///
-            /// Color to be used for text background
-            ///
-            public static let textBackgroundColor = color("NavigationBarTextBackgroundColor")
-
-            ///
-            /// Color to be used for title
-            ///
-            public static let titleColor = color("NavigationBarTitleTextColor")
-
-            ///
-            /// Color to be used for icons
-            ///
-            public static let iconColor = color("NavigationBarIconColor")
-        }
-
-        ///
-        /// NavigationBar colors
-        ///
-        public struct Favorites {
-
-            ///
-            /// Color to be used for Cell background
-            ///
-            public static let favoriteCellBackgroundColor = color("FavoriteCellBackground")
-        }
-
-    }
-
-    ///
     /// Icons from the asset catalog
     ///
     public struct Icons {
 
-        private static let selectedIconTintColor = Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue
+        private static let selectedIconTintColor = UIColor(hex: "#2D3047") ?? UIColor.blue // Assets.Colors.TabBar.selectedIconColor ?? UIColor.blue
 
         ///
         /// Icons for each App Module
