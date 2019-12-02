@@ -26,18 +26,14 @@ import Ness
 public class GenresApi: AppBaseApi {
 
     public func genres(apiKey: String,
-                       success: @escaping ((GenreListResult?) -> Void),
-                       failure: @escaping ((Error) -> Void)) {
+                       completionHandler: @escaping ((Response<GenreListResult?, Error>) -> Void)) {
 
-                let targetUrl = "/3/genre/movie/list?api_key=:apiKey"
-                    .replacingOccurrences(of: ":apiKey", with: apiKey)
-                let headers: [String: String]? = nil
+        let targetUrl = "/3/genre/movie/list?api_key=:apiKey"
+            .replacingOccurrences(of: ":apiKey", with: apiKey)
 
-                self.get(targetUrl: targetUrl,
-                         headers: headers,
-                         success: success,
-                         failure: failure,
-                         retryAttempts: 30)
+        self.get(targetUrl: targetUrl,
+                 completionHandler: completionHandler,
+                 retryAttempts: 30)
 
     }
 

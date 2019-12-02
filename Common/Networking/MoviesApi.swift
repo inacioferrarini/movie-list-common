@@ -27,19 +27,16 @@ public class MoviesApi: AppBaseApi {
 
     public func popularMovies(apiKey: String,
                               page: Int = 1,
-                              success: @escaping ((MovieSearchResult?) -> Void),
-                              failure: @escaping ((Error) -> Void)) {
+                              completionHandler: @escaping ((Response<MovieSearchResult?, Error>) -> Void)) {
 
         let targetUrl = "/3/movie/popular?page=1&api_key=:apiKey&page=:page"
             .replacingOccurrences(of: ":apiKey", with: apiKey)
             .replacingOccurrences(of: ":page", with: "\(page)")
-        let headers: [String: String]? = nil
 
         self.get(targetUrl: targetUrl,
-                 headers: headers,
-                 success: success,
-                 failure: failure,
+                 completionHandler: completionHandler,
                  retryAttempts: 30)
+
     }
 
 }
