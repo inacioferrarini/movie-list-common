@@ -29,17 +29,26 @@ extension UIImage {
     /// Downloads an image from the given `URL`.
     /// - Parameter url: Image URL.
     /// - Parameter completion: Clojure to be executed when download is complete or fails
+    /// - returns The URLSessionDataTask that will be used to download the image from the given `url`
     ///
-    public static func download(from url: URL, completion: @escaping (_ image: UIImage?, _ error: Error?) -> Void) {
+    public static func download(from url: URL, completion: @escaping (_ image: UIImage?, _ error: Error?) -> Void) -> URLSessionDataTask? {
 
+        var imageSession: URLSessionDataTask?
         let cacheKey = url.absoluteString
+
         if let image = ImageCache.shared.image(key: cacheKey) {
             completion(image, nil)
         } else {
             DispatchQueue.global().async {
-                do {
-                    let imageData = try Data(contentsOf: url)
-                    if let image = UIImage(data: imageData) {
+                imageSession = URLSession.shared.dataTask(with: url, completionHandler: { (data, _, error) in
+                    if let error = error {
+                        DispatchQueue.main.async {
+                            completion(nil, error)
+                        }
+                        return
+                    }
+
+                    if let data = data, let image = UIImage(data: data) {
                         ImageCache.shared.store(image: image, key: cacheKey)
                         DispatchQueue.main.async {
                             completion(image, nil)
@@ -49,13 +58,11 @@ extension UIImage {
                             completion(nil, nil)
                         }
                     }
-                } catch {
-                    DispatchQueue.main.async {
-                        completion(nil, error)
-                    }
-                }
+                })
+                imageSession?.resume()
             }
         }
+        return imageSession
     }
 
 }
